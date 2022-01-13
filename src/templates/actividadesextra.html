@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+    Importar
+{% endblock %}
+
+{% block content %}
+<!--aqui comienza mi codigo-->
+
+{% if user.is_authenticated %}
+
+<h1>Importando Actividades Extracuriculares</h1>
+</br></br>
+
+<div class="container">
+
+<div class="form-group">
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{ form.as_p}}
+<div class="row">
+  <div class="col">
+      <button type="submit" class="btn btn-primary">Importar Imagen</button>
+  </form>
+  </div>
+
+
+
+
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+
+
+</div>
+</div>
+</div>
+    {% if submitted == 1%}
+      <div class="alert alert-success" role="alert">
+        Se ha guardado exitosamente.
+      </div>
+
+
+    {% elif submitted == 2%}
+      <div class="alert alert-danger" role="alert">
+        Hay algun error, corrigelo y vuelve a intentar.
+      </div>
+
+      {% endif %}
+
+{% else %}
+
+<h3>No tienes autoridad de estar en esta pagina</h3>
+
+
+{% endif %}
+
+
+<!--aqui Termina mi codigo-->
+{%  endblock %}

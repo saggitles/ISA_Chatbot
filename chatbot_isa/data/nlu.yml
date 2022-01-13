@@ -1,0 +1,2282 @@
+version: "2.0"
+nlu:
+- intent: saludo
+  examples: |
+    - hola
+    - Hola
+    - ola
+    - que mas?
+    - qhubo
+    - buenas tardes
+    - buenos dias
+    - entonces
+    - tonces
+    - ole
+    - oe
+    - buenas noches
+    - buenas
+    - holi
+    - ey
+    - ei
+    - buenas ç
+    - buenas buenas
+    - ola buenas tardes
+    - Hola teybaa
+    - Buenas
+    - hol
+    - holaa
+    - Holi
+    - HOLA
+    - Holaa
+    - Oye
+    - Holaaa
+    - Buenas tardes
+    - oye
+    - Hola buen dia
+    - Holi isabella
+    - Buenss
+    - Vola
+    - Wenas wera
+    - Isabella ?
+    - Oye isabella
+    - Hello
+    - Halo
+    - Hii
+    - Isa
+    - ke ace
+    - Oyr
+    - Hey
+    - Ole
+    - Isabella
+    - :)
+    - Hi
+- intent: start
+  examples: |
+    - /start
+- intent: solicidar_codigo
+  examples: |
+    - claro, este es mi codigo [2420171007](codigo_estudiantil)
+    - mi codigo es [2420161042](codigo_estudiantil)
+    - este es mi codigo [2420142032](codigo_estudiantil)
+    - claro, es [2420122015](codigo_estudiantil)
+    - [2420102002](codigo_estudiantil)
+    - [2420102021](codigo_estudiantil) es mi codigo
+    - [3520151024](codigo_estudiantil)
+    - [2420171007](codigo_estudiantil)
+    - Claro, este es mi código [2420171007](codigo_estudiantil)
+    - Claro, mi código es [2420171007](codigo_estudiantil)
+    - [2420171005](codigo_estudiantil)
+    - [2420151014](codigo_estudiantil)
+    - [2420171004](codigo_estudiantil)
+    - [2420171067](codigo_estudiantil)
+    - [2420171008](codigo_estudiantil)
+    - [2420171062](codigo_estudiantil)
+    - [2420021971](codigo_estudiantil)
+    - [2420172030](codigo_estudiantil)
+    - [2420121007](codigo_estudiantil)
+    - [2420161051](codigo_estudiantil)
+    - [2420210425](codigo_estudiantil)
+    - [2420171017](codigo_estudiantil)
+    - Hola, mi código es [2420162008](codigo_estudiantil)
+    - [2420061040](codigo_estudiantil)
+    - [2420191049](codigo_estudiantil)
+    - [2420162018](codigo_estudiantil)
+    - [2420181016](codigo_estudiantil)
+    - [2420171011](codigo_estudiantil)
+    - [2420181011](codigo_estudiantil)
+    - [2420142004](codigo_estudiantil)
+    - [2420151002](codigo_estudiantil)
+    - [2420171001](codigo_estudiantil)
+- intent: despedida
+  examples: |
+    - bye
+    - adios
+    - tenga un buen dia
+    - vemos
+    - se cuida
+    - saludos
+    - chao
+    - hasta luego
+    - hasta la proxima
+    - adios linda
+    - gracias, adios
+    - Chao
+    - hasya luego
+    - Adios
+    - muchas gracias isa
+    - gracias
+    - vale gracias
+    - bai
+    - Gracias
+    - chaito
+    - Gracias, Chao
+    - Aios
+    - me tengo que ir chaoo
+    - chaooo
+    - bai bai
+    - Adiós fea
+- intent: afirmar
+  examples: |
+    - si
+    - sisas
+    - por supuesto
+    - claro
+    - suena genial
+    - correcto
+    - siks
+    - Ok
+    - Si
+- intent: denegar
+  examples: |
+    - no
+    - nunca
+    - no lo creo
+    - no me gusto
+    - no quiero
+    - no mames
+    - nel
+    - No
+    - No tiene?
+- intent: sent_pregunta
+  examples: |
+    - como estas?
+    - tas bien?
+    - como vas?
+    - que tal tu dia?
+    - que me cuentas?
+    - cómo estás?
+    - como esats?
+    - como estas
+    - Cómo estás??
+    - Cómo estás ?
+    - Cómo estás?
+    - Cómo está
+    - Que más?
+    - Como estás?
+    - que mas
+    - komo eztas
+    - holaa,como eestas?
+    - ¿cómo estás?
+    - Que tal?
+    - Cómo vamos?
+    - Que onda???
+- intent: desafio
+  examples: |
+    - eres linda?
+    - como te ves?
+    - a que te dedicas?
+    - quien te cré?
+    - De dónde eres ?
+    - A quien le perteneces?
+    - Cómo te ves
+- intent: presentacion
+  examples: |
+    - Como te llamas?
+    - Quien eres?
+    - que eres
+    - quien es tu creador
+    - por que te llamas isa
+    - quien es richard blacker
+    - quien es sebastian barragan
+    - eres un robot?
+    - que eres?
+    - quien eres?
+    - eres un bot?
+    - quien es tu creador?
+    - es richard o barragan su creador?
+    - quien es richard?
+    - quien es su creador}
+    - Quien es tu creador?
+    - quien eres
+    - Quienes te crearon?
+    - Quiénes te crearon?
+    - Quien es sebastian
+    - quien es tu padre?
+    - Que eres ?
+    - Quien es barragán
+    - Que eres?
+    - Quien es tu creador
+    - ¿quién te creó?
+    - ¿con que lenguaje te crearon?
+    - barragan
+    - quien es barragan
+    - Qu eres?
+    - Quien es Barragán
+    - Cómo eres?
+- intent: servicio_ayuda
+  examples: |
+    - ayudame
+    - neceisto ayuda
+    - necesito ayuda
+    - ayuda
+    - en que ayudas tu?
+    - Que puedes hacer?
+    - necesito ayuda en buscar un libro
+    - Una pregunta
+    - Que información me puedes dar?
+    - necesito informacion
+    - Necesito ayuda
+    - necesito que me ayudes
+    - Hola ayudame
+    - Funciones
+    - Que me puedes ayudar
+    - Que se puede hacer
+    - En que me puede ayudar
+    - Que haces
+    - Que ofreces
+    - que haces
+    - Que puedes hacer??
+    - que puedes hacer
+    - Alexa que puedes hacer
+    - Necesita ayuda
+    - Necesito un favor
+    - Qué hace
+    - Sabes dónde puedo conseguir ayuda?
+- intent: nlu_fallback
+  examples: |
+    - fea
+    - Porqie no le responde a Harold?
+    - Una nuda ?
+- intent: grosero_respuesta
+  examples: |
+    - Que pendeja
+    - Sapaperra
+    - Dónde queda su madre
+    - Chinga tu madre
+    - eres fea
+    - Eres fea
+    - Eres horrible
+    - Mamelo
+    - Respondeeeee!!!!
+    - Bad service
+    - I hate you
+    - Sacate las chichis
+    - Bot de mierda
+    - Grosera
+    - No mames
+    - Fotos de Juan Pablo
+    - Puta
+    - Eres una puta
+    - No sirves para nada
+    - usted es un mamerto
+    - me lo mamas?
+    - eres una puta
+    - Barragan lo chupa
+    - Tus creadores son maricas, ¿verdad?
+    - ¿Son tus papás unas perras?
+    - Tus papis son unas perras
+    - ¿Son maricas tus creadores?
+    - loca
+    - loco
+    - barragán es gay?
+    - Olé puta
+    - Eres muy fea
+    - Fea
+    - Sspo
+    - Mejor cállate
+    - Cállese
+- intent: servicio_ubicacion
+  examples: |
+    - Quiero saber la ubicacion del [lab L1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Donde esta el [laboratorio L1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Donde queda el [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Quiero saber la ubicacion del [laboratorio L2]{"entity": "Ubicacion", "value": "LABORATORIO INDUSTRIAL (L2)"}
+    - Donde esta el [laboratorio L2]{"entity": "Ubicacion", "value": "LABORATORIO INDUSTRIAL (L2)"}
+    - Donde queda el [laboratorio industrial]{"entity": "Ubicacion", "value": "LABORATORIO INDUSTRIAL (L2)"}
+    - Quiero saber la ubicacion del [Lab de electromedicina]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Tengo que ir al [lab de electromedicina]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Donde esta el [Labpratorio de electromedicina]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Donde queda [electromedicina]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Quiero saber la ubicacion del [laboratorio de telecomunicaciones]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Donde esta el  [lab L5]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Donde queda [telecomunicaciones]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Quiero saber la ubicacion del [lab L6]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Donde esta el [laboratorio de software]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Donde queda el [L6]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Quiero saber la ubicacion de la [oficina de la psicologa]{"entity": "Ubicacion", "value": "OFICINA PSICOLOGA"}
+    - Donde queda la [psicologa]{"entity": "Ubicacion", "value": "OFICINA PSICOLOGA"}
+    - Donde esta la [psicologa]{"entity": "Ubicacion", "value": "OFICINA PSICOLOGA"}
+    - Quiero saber la ubicacion de la [sala de profesores 1]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde esta la [oficina de fito]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde queda la [oficina de rodolfo gutierrez]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde queda la [oficina de rodolfo]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde esta la [oficina de oswaldo]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde queda la [oficina de oswaldo lopez]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde queda la [oficina de osvaldo lopez]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde esta la [oficina de osvaldo]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde esta la [oficina de sandoval]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde queda la [oficina de carlos sandoval]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Me ubica a la [oficina de sandoval]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde esta la [oficina de harold]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde esta la [oficina de murcia]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Me ubica a la [oficina de harold]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde esta la [oficina de Jose Fernando]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde esta la [oficina de Fernando]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Donde queda la [sala de profesores 1]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Quiero saber la ubicacion de la [sala de profesores 2]{"entity": "Ubicacion", "value": "SALA PROFESORES 2"}
+    - Donde esta la [oficina de barrero]{"entity": "Ubicacion", "value": "SALA PROFESORES 2"}
+    - Donde queda la [sala de profesores 2]{"entity": "Ubicacion", "value": "SALA PROFESORES 2"}
+    - Me ubica a la [oficina de oscar barrero]{"entity": "Ubicacion", "value": "SALA PROFESORES 1"}
+    - Quiero saber la ubicacion de [automatizacion] {"entity":"Ubicacion","value":"AUTOMATIZACION"}
+    - Donde esta el [semillero de robotica]{"entity": "Ubicacion", "value": "AUTOMATIZACION"}
+    - Donde queda el laboratorio de [automatizacion]{"entity": "Ubicacion", "value": "AUTOMATIZACION"}
+    - Quiero saber la ubicacion de los [baños de los laboratorios]{"entity": "Ubicacion", "value": "BA\u00d1OS LABS"}
+    - Donde esta el [baños de labs]{"entity": "Ubicacion", "value": "BA\u00d1OS LABS"}
+    - Donde queda el [baños de lab]{"entity": "Ubicacion", "value": "BA\u00d1OS LABS"}
+    - Quiero saber la ubicacion del [programa de ingenieria electronica]{"entity": "Ubicacion", "value": "OFICINA DE PROGRAMA INGENIERIA ELECTRONICA"}
+    - Donde esta el [programa de ingenieria electronica]{"entity": "Ubicacion", "value": "OFICINA DE PROGRAMA INGENIERIA ELECTRONICA"}
+    - Donde queda el [programa de ingenieria]{"entity": "Ubicacion", "value": "OFICINA DE PROGRAMA INGENIERIA ELECTRONICA"}
+    - Quiero saber la ubicacion de la [cafeteria de ingenieria]{"entity": "Ubicacion", "value": "CAFETERIA INGENIERIA"}
+    - Donde esta la [cafeteria ing]{"entity": "Ubicacion", "value": "CAFETERIA INGENIERIA"}
+    - Donde queda la [cafeteria de ingenieria]{"entity": "Ubicacion", "value": "CAFETERIA INGENIERIA"}
+    - Quiero saber la ubicacion del [baños de ingenieria]{"entity": "Ubicacion", "value": "BA\u00d1OS INGENIERIA"}
+    - Donde esta el [baños de ingenieria]{"entity": "Ubicacion", "value": "BA\u00d1OS INGENIERIA"}
+    - Donde queda el [baños de ingenieria]{"entity": "Ubicacion", "value": "BA\u00d1OS INGENIERIA"}
+    - Quiero saber la ubicacion del salón [914](Ubicacion)
+    - Donde esta el [salón 914]{"entity": "Ubicacion", "value": "914"}
+    - Donde queda el salón [914](Ubicacion)
+    - Quiero saber la ubicacion del salón [915](Ubicacion)
+    - Donde esta el [915](Ubicacion)
+    - Donde queda el salón [915](Ubicacion)
+    - Quiero saber la ubicacion del salón [813](Ubicacion)
+    - Donde esta el [salón 813]{"entity": "Ubicacion", "value": "813"}
+    - Donde queda el salón [813](Ubicacion)
+    - Quiero saber la ubicacion de salón [812](Ubicacion)
+    - Donde esta el [salón 812]{"entity": "Ubicacion", "value": "812"}
+    - Donde queda el salón [812](Ubicacion)
+    - Quiero saber la ubicacion del salón [811](Ubicacion)
+    - Donde esta el [salón 811]{"entity": "Ubicacion", "value": "811"}
+    - Donde queda el salón [811](Ubicacion)
+    - Quiero saber la ubicacion del salón [822](Ubicacion)
+    - Donde esta el [salón 822]{"entity": "Ubicacion", "value": "822"}
+    - Donde queda el salón [822](Ubicacion)
+    - Quiero saber la ubicacion del salón [924](Ubicacion)
+    - Donde esta el [salón 924]{"entity": "Ubicacion", "value": "924"}
+    - Donde queda el salón [924](Ubicacion)
+    - Quiero saber la ubicacion del salón [823](Ubicacion)
+    - Donde esta el [salón 823]{"entity": "Ubicacion", "value": "823"}
+    - Donde queda el salón [823](Ubicacion)
+    - Quiero saber la ubicacion del salón [925](Ubicacion)
+    - Donde esta el salón [salón 925]{"entity": "Ubicacion", "value": "925"}
+    - Donde queda el salón [925](Ubicacion)
+    - Quiero saber la ubicacion del salón [916](Ubicacion)
+    - Donde esta el  [salón 916]{"entity": "Ubicacion", "value": "916"}
+    - Donde queda el salón [916](Ubicacion)
+    - Quiero saber la ubicacion del salón [75](Ubicacion)
+    - Donde esta el  [salón 75]{"entity": "Ubicacion", "value": "75"}
+    - Donde queda el salón [75](Ubicacion)
+    - Quiero saber la ubicacion del salón [74](Ubicacion)
+    - Donde esta el [salón 74]{"entity": "Ubicacion", "value": "74"}
+    - Donde queda el [salón 74]{"entity": "Ubicacion", "value": "74"}
+    - Quiero saber la ubicacion ubicacion del [salón 73]{"entity": "Ubicacion", "value": "73"}
+    - Donde esta el [salón 73]{"entity": "Ubicacion", "value": "73"}
+    - Donde queda el [salón 73]{"entity": "Ubicacion", "value": "73"}
+    - Quiero saber la ubicacion del [baños bloque 7]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 7"}
+    - Donde esta el [baños bloque 7]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 7"}
+    - Donde queda el [baños del bloque 7]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 7"}
+    - Quiero saber la ubicacion del salón [61](Ubicacion)
+    - Donde esta el  [salón 61]{"entity": "Ubicacion", "value": "61"}
+    - Donde queda el salón [61](Ubicacion)
+    - Quiero saber la ubicacion del salón [62](Ubicacion)
+    - Donde esta el [salón 62]{"entity": "Ubicacion", "value": "62"}
+    - Donde queda el [62](Ubicacion)
+    - Quiero saber la ubicacion del salón [63](Ubicacion)
+    - Donde esta el [salón 63]{"entity": "Ubicacion", "value": "63"}
+    - Donde queda el [63](Ubicacion)
+    - Quiero saber la ubicacion del salón [64](Ubicacion)
+    - Donde esta el [salón 64]{"entity": "Ubicacion", "value": "64"}
+    - Donde queda el 64]{"entity":"Ubicacion","value":"64"}
+    - Quiero saber la ubicacion del salón [65](Ubicacion)
+    - Donde esta el [salón 65]{"entity": "Ubicacion", "value": "65"}
+    - Donde queda el [65](Ubicacion)
+    - Quiero saber la ubicacion del salón [56](Ubicacion)
+    - Donde esta el [salón 56]{"entity": "Ubicacion", "value": "56"}
+    - Donde queda el [56](Ubicacion)
+    - Quiero saber la ubicacion del salón [55](Ubicacion)
+    - Donde esta el [salón 55]{"entity": "Ubicacion", "value": "55"}
+    - Donde queda el [55](Ubicacion)
+    - Quiero saber la ubicacion del salón [54](Ubicacion)
+    - Donde esta el [salón 54]{"entity": "Ubicacion", "value": "54"}
+    - Donde queda el [54](Ubicacion)
+    - Quiero saber la ubicacion del salón [53](Ubicacion)
+    - Donde esta el [salón 53]{"entity": "Ubicacion", "value": "53"}
+    - Donde queda el [53](Ubicacion)
+    - Quiero saber la ubicacion del salón [52](Ubicacion)
+    - Donde esta el [salón 52]{"entity": "Ubicacion", "value": "52"}
+    - Donde queda el [52](Ubicacion)
+    - Quiero saber la ubicacion del salón [51](Ubicacion)
+    - Donde esta el [salón 51]{"entity": "Ubicacion", "value": "51"}
+    - Donde queda el [51](Ubicacion)
+    - Quiero saber la ubicacion de la [cafeteria central]{"entity": "Ubicacion", "value": "CAFETERIA CENTRAL"}
+    - Donde esta la [cafeteria central]{"entity": "Ubicacion", "value": "CAFETERIA CENTRAL"}
+    - Donde queda la [cafetería central]{"entity": "Ubicacion", "value": "CAFETERIA CENTRAL"}
+    - Quiero saber la ubicacion del salón [41](Ubicacion)
+    - Donde esta el [salón 41]{"entity": "Ubicacion", "value": "41"}
+    - Donde queda el [41](Ubicacion)
+    - Quiero saber la ubicacion del salón [42](Ubicacion)
+    - Donde esta el [salón 42]{"entity": "Ubicacion", "value": "42"}
+    - Donde queda el  [42](Ubicacion)
+    - Quiero saber la ubicacion del salón [43](Ubicacion)
+    - Donde esta el [salón 43]{"entity": "Ubicacion", "value": "43"}
+    - Donde queda el [43](Ubicacion)
+    - Quiero saber la ubicacion del salón [44](Ubicacion)
+    - Donde esta el [salón 44]{"entity": "Ubicacion", "value": "44"}
+    - Donde queda el [44](Ubicacion)
+    - Quiero saber la ubicacion del salón [45](Ubicacion)
+    - Donde esta el  [salón 45]{"entity": "Ubicacion", "value": "45"}
+    - Donde queda el [45](Ubicacion)
+    - Quiero saber la ubicacion del [baños del bloque 4]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 4"}
+    - Donde esta el [baño del bloque 4]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 4"}
+    - Donde queda el [baños del bloque 4]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 4"}
+    - Quiero saber la ubicacion del [baños bloque 3]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 3"}
+    - Donde esta el [baños bloque 3]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 3"}
+    - Donde queda el [baños bloque 3]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 3"}
+    - Quiero saber la ubicacion del salón [35](Ubicacion)
+    - Donde esta el [salón 35]{"entity": "Ubicacion", "value": "35"}
+    - Donde queda el [35](Ubicacion)
+    - Quiero saber la ubicacion del salón [34](Ubicacion)
+    - Donde esta el [salón 34]{"entity": "Ubicacion", "value": "34"}
+    - Donde queda el [34](Ubicacion)
+    - Quiero saber la ubicacion del salón [33](Ubicacion)
+    - Donde esta el [salón 33]{"entity": "Ubicacion", "value": "33"}
+    - Donde queda el [33](Ubicacion)
+    - Quiero saber la ubicacion del salón [32](Ubicacion)
+    - Donde esta el [salón 32]{"entity": "Ubicacion", "value": "32"}
+    - Donde queda el [32](Ubicacion)
+    - Quiero saber la ubicacion del salón [31](Ubicacion)
+    - Donde esta el [salón 31]{"entity": "Ubicacion", "value": "31"}
+    - Donde queda el [31](Ubicacion)
+    - Quiero saber la ubicacion del salón [25](Ubicacion)
+    - Donde esta el [salón 25]{"entity": "Ubicacion", "value": "25"}
+    - Donde queda el [25](Ubicacion)
+    - Quiero saber la ubicacion del salón [26](Ubicacion)
+    - Donde esta el [salón 26]{"entity": "Ubicacion", "value": "26"}
+    - Donde queda el [26](Ubicacion)
+    - Quiero saber la ubicacion del [baños bloque 1]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 1"}
+    - Donde esta el [baños bloque 1]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 1"}
+    - Donde queda el [baños bloque 1]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 1"}
+    - Quiero saber la ubicacion del salón [21](Ubicacion)
+    - Donde esta el [salón 21]{"entity": "Ubicacion", "value": "21"}
+    - Donde queda el [21](Ubicacion)
+    - Quiero saber la ubicacion del salón [23](Ubicacion)
+    - Donde esta el [salón 23]{"entity": "Ubicacion", "value": "23"}
+    - Donde queda el [23](Ubicacion)
+    - Quiero saber la ubicacion del salón [24](Ubicacion)
+    - Donde esta el [salón 24]{"entity": "Ubicacion", "value": "24"}
+    - Donde queda el [24](Ubicacion)
+    - Quiero saber la ubicacion del salón [15](Ubicacion)
+    - Donde esta el [salón 15]{"entity": "Ubicacion", "value": "15"}
+    - Donde queda el [15](Ubicacion)
+    - Quiero saber la ubicacion del salón [14](Ubicacion)
+    - Donde esta el [salón 14]{"entity": "Ubicacion", "value": "14"}
+    - Donde queda el [14](Ubicacion)
+    - Quiero saber la ubicacion del salón [13](Ubicacion)
+    - Donde esta el [salón 13]{"entity": "Ubicacion", "value": "13"}
+    - Donde queda el [13](Ubicacion)
+    - Quiero saber la ubicacion del salón [12](Ubicacion)
+    - Donde esta el [salón 12]{"entity": "Ubicacion", "value": "12"}
+    - Donde queda el [12](Ubicacion)
+    - Quiero saber la ubicacion del salón [11](Ubicacion)
+    - Donde esta el [salón 11]{"entity": "Ubicacion", "value": "11"}
+    - Donde queda el [11](Ubicacion)
+    - Quiero saber la ubicacion del salón [208](Ubicacion)
+    - Donde esta el [salón 208]{"entity": "Ubicacion", "value": "208"}
+    - Donde queda el [208](Ubicacion)
+    - Quiero saber la ubicacion del salón [206](Ubicacion)
+    - Donde esta el [salón 206]{"entity": "Ubicacion", "value": "206"}
+    - Donde queda el [206](Ubicacion)
+    - Quiero saber la ubicacion del salón [207](Ubicacion)
+    - Donde esta el [salón 207]{"entity": "Ubicacion", "value": "207"}
+    - Donde queda el [207](Ubicacion)
+    - Quiero saber la ubicacion del salón [205](Ubicacion)
+    - Donde esta el [salón 205]{"entity": "Ubicacion", "value": "205"}
+    - Donde queda el [205](Ubicacion)
+    - Quiero saber la ubicacion del salón [203](Ubicacion)
+    - Donde esta el [salón 203]{"entity": "Ubicacion", "value": "203"}
+    - Donde queda el [203](Ubicacion)
+    - Quiero saber la ubicacion del salón [202](Ubicacion)
+    - Donde esta el [salón 202]{"entity": "Ubicacion", "value": "202"}
+    - Donde queda el [202](Ubicacion)
+    - Quiero saber la ubicacion del salón [201](Ubicacion)
+    - Donde esta el [salón 201]{"entity": "Ubicacion", "value": "201"}
+    - Donde queda el [201](Ubicacion)
+    - Quiero saber la ubicacion del salón [301](Ubicacion)
+    - Donde esta el [salón 301]{"entity": "Ubicacion", "value": "301"}
+    - Donde queda el [301](Ubicacion)
+    - Quiero saber la ubicacion del salón [303](Ubicacion)
+    - Donde esta el [salón 303]{"entity": "Ubicacion", "value": "303"}
+    - Donde queda el [303](Ubicacion)
+    - Quiero saber la ubicacion del salón [302](Ubicacion)
+    - Donde esta el [salón 302]{"entity": "Ubicacion", "value": "302"}
+    - Donde queda el [302](Ubicacion)
+    - Quiero saber la ubicacion del salón [304](Ubicacion)
+    - Donde esta el [salón 304]{"entity": "Ubicacion", "value": "304"}
+    - Donde queda el [304](Ubicacion)
+    - Quiero saber la ubicacion del salón [104](Ubicacion)
+    - Donde esta el [salón 104]{"entity": "Ubicacion", "value": "104"}
+    - Donde queda el [104](Ubicacion)
+    - Quiero saber la ubicacion del salón [105](Ubicacion)
+    - Donde esta el [salón 105]{"entity": "Ubicacion", "value": "105"}
+    - Donde queda el [105](Ubicacion)
+    - Quiero saber la ubicacion de los [baños del cep]{"entity": "Ubicacion", "value": "BA\u00d1OS CEP"}
+    - Donde estan los [baños en el cep]{"entity": "Ubicacion", "value": "BA\u00d1OS CEP"}
+    - Donde queda el [baños del cep]{"entity": "Ubicacion", "value": "BA\u00d1OS CEP"}
+    - Quiero saber la ubicacion de la oficina de [apoyo financiero]{"entity": "Ubicacion", "value": "OFICINA APOYO FINANCIERO"}
+    - Necesito ir a [apoyo financiero]{"entity": "Ubicacion", "value": "OFICINA APOYO FINANCIERO"}
+    - Donde esta [apoyo financiero]{"entity": "Ubicacion", "value": "OFICINA APOYO FINANCIERO"}
+    - Donde queda la oficina de [apoyo financiero]{"entity": "Ubicacion", "value": "OFICINA APOYO FINANCIERO"}
+    - Quiero saber la ubicacion de la oficina de [comunicacion institucional]{"entity": "Ubicacion", "value": "OFICINA COMUNICACION INSTITUCIONAL"}
+    - Nesecito ir a [comunicacion institucional]{"entity": "Ubicacion", "value": "OFICINA COMUNICACION INSTITUCIONAL"}
+    - Donde esta [comunicacion institucional]{"entity": "Ubicacion", "value": "OFICINA COMUNICACION INSTITUCIONAL"}
+    - Donde queda la oficina de [comunicacion institucional]{"entity": "Ubicacion", "value": "OFICINA COMUNICACION INSTITUCIONAL"}
+    - Quiero saber la ubicacion del [auditorio]{"entity": "Ubicacion", "value": "AUDITORIO"}
+    - Donde esta el [auditorio]{"entity": "Ubicacion", "value": "AUDITORIO"}
+    - Donde queda el [auditorio]{"entity": "Ubicacion", "value": "AUDITORIO"}
+    - Quiero saber la ubicacion de la [biblioteca]{"entity": "Ubicacion", "value": "BIBLIOTECA"}
+    - Donde esta la [biblioteca]{"entity": "Ubicacion", "value": "BIBLIOTECA"}
+    - Donde queda la [biblioteca]{"entity": "Ubicacion", "value": "BIBLIOTECA"}
+    - Quiero saber la ubicacion del [gimnasio]{"entity": "Ubicacion", "value": "GIMNASIO"}
+    - Donde esta el [gimnasio]{"entity": "Ubicacion", "value": "GIMNASIO"}
+    - Donde queda el [gimnasio]{"entity": "Ubicacion", "value": "GIMNASIO"}
+    - Quiero saber la ubicacion de los [baños del gym]{"entity": "Ubicacion", "value": "BA\u00d1OS BIENESTAR UNIVERSITARIO"}
+    - Donde estan los [baños del gimnasio]{"entity": "Ubicacion", "value": "BA\u00d1OS BIENESTAR UNIVERSITARIO"}
+    - Donde estan los [baños del ping pong]{"entity": "Ubicacion", "value": "BA\u00d1OS BIENESTAR UNIVERSITARIO"}
+    - Donde queda el [baño del bienestar universitario]{"entity": "Ubicacion", "value": "BA\u00d1OS BIENESTAR UNIVERSITARIO"}
+    - Quiero saber la ubicacion de la [cafeteria cep]{"entity": "Ubicacion", "value": "CAFETERIA CEP"}
+    - Donde esta la [cafeteria cep]{"entity": "Ubicacion", "value": "CAFETERIA CEP"}
+    - Donde queda la [cafeteria de psicologia]{"entity": "Ubicacion", "value": "CAFETERIA CEP"}
+    - Quiero saber la ubicacion de la [cafeteria del gimnasio]{"entity": "Ubicacion", "value": "CAFETERIA BIENESTAR UNIVERSITARIO"}
+    - Donde esta la [cafeteria de bienestar universitario]{"entity": "Ubicacion", "value": "CAFETERIA BIENESTAR UNIVERSITARIO"}
+    - Donde queda la [cafeteria gym]{"entity": "Ubicacion", "value": "CAFETERIA BIENESTAR UNIVERSITARIO"}
+    - Donde queda la [cafeteria del ping pong]{"entity": "Ubicacion", "value": "CAFETERIA BIENESTAR UNIVERSITARIO"}
+    - [Oficina](Ubicacion) [psicologa]{"entity": "Ubicacion", "value": "OFICINA PSICOLOGA"}
+    - Donde esta la [oficina psicóloga]{"entity": "Ubicacion", "value": "OFICINA PSICOLOGA"}
+    - Donde esta la [oficina de psicología]?{"entity": "Ubicacion", "value": "OFICINA PSICOLOGA"}
+    - Donde esta la [CEP]{"entity": "Ubicacion", "value": "BA\u00d1OS CEP"}
+    - Donde esta la [cep]{"entity": "Ubicacion", "value": "BA\u00d1OS CEP"}
+    - [Cep]{"entity": "Ubicacion", "value": "BA\u00d1OS CEP"}
+    - Donde esta el [cep]{"entity": "Ubicacion", "value": "BA\u00d1OS CEP"}
+    - Donde esta [psicologia]{"entity": "Ubicacion", "value": "OFICINA PSICOLOGA"}
+    - [Salón 65]{"entity": "Ubicacion", "value": "65"}
+    - Donde esta el [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}?
+    - Dónde queda la [cafetería central]{"entity": "Ubicacion", "value": "CAFETERIA CENTRAL"}
+    - Donde está el [salón 61]{"entity": "Ubicacion", "value": "61"}
+    - Donde esta la [cafetería central]{"entity": "Ubicacion", "value": "CAFETERIA CENTRAL"}?
+    - Donde está la [cafetería central]{"entity": "Ubicacion", "value": "CAFETERIA CENTRAL"}?
+    - Donde esta [apoyo financiero]{"entity": "Ubicacion", "value": "OFICINA APOYO FINANCIERO"}?
+    - No, no sé dónde está el [salón 823]{"entity": "Ubicacion", "value": "823"}
+    - donde queda un [salon]{"entity": "Ubicacion", "value": "SALON"}
+    - ayudame a buscar un [salon]{"entity": "Ubicacion", "value": "SALON"}
+    - sabes donde queda un [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Donde esta el [lab 1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - donde queda el [laboratorio l5]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - deonde esta el [cep]{"entity": "Ubicacion", "value": "BA\u00d1OS CEP"}
+    - sabes donde queda un [salon]{"entity": "Ubicacion", "value": "SALON"}
+    - sabes donde queda el [salon]{"entity": "Ubicacion", "value": "SALON"}
+    - Salon [33](Ubicacion)
+    - Donde esta el [laboratorio](Ubicacion)
+    - Donde esta el [laboratorio](Ubicacion)?
+    - Donde estan los [salones](Ubicacion)?
+    - Donde esta la [oficina de psicología](Ubicacion)?
+    - Necesito un [salon](Ubicacion)
+    - Que [laboratorios](Ubicacion) existe en la universidad?
+    - No encuentro el [laboratorio](codigo_estudiantil)
+    - [Salón 11]{"entity": "Ubicacion", "value": "11"}
+    - Como llego a la [universidad](Ubicacion)
+    - Donde esta el [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Donde esta la oficina de [apoyo financiero]{"entity": "Ubicacion", "value": "OFICINA APOYO FINANCIERO"}
+    - Dónde queda el salón [11](Ubicacion)
+    - [Oficina electronica](Ubicacion)
+    - [Laboratorio L5]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - [Automatizacion](Ubicacion)
+    - Donde está ubicada la [cafetería del CEP](Ubicacion)
+    - Donde queda la [cafetería del CEP](Ubicacion)
+    - Donde queda el [L5]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Necesito la ubicación de los [baños de los laboratorios]{"entity": "Ubicacion", "value": "BA\u00d1OS LABS"}
+    - [Baños Laboratorios](Ubicacion)
+    - [Baños laboratorios](Ubicacion)
+    - Donde esta [automatizacion]{"entity": "Ubicacion", "value": "AUTOMATIZACION"}
+    - Donde queda el laboratorio de [automatización](Ubicacion)?
+    - Donde esta el [baño de los laboratorios](codigo_estudiantil) del primer piso
+    - Donde esta el [baño de los laboratorios](Ubicacion)
+    - [Bloque de arquitectura](Ubicacion)
+    - Donde esta el [baño](Ubicacion)
+    - donde queda el [baño de niños](Ubicacion)
+    - Donde queda el [baño de niñas](Ubicacion)
+    - Donde queda el [baño de niñas en los laboratorios](Ubicacion)
+    - Donde queda el [L1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - [Laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - [75](Ubicacion)
+    - [Salones]{"entity": "Ubicacion", "value": "SALON"}
+    - donde queda [psicologia]{"entity": "Ubicacion", "value": "OFICINA PSICOLOGA"}
+    - Dónde queda la [oficina de programa](Ubicacion)
+    - Dónde queda el [baño del cep](Ubicacion)
+    - [62](Ubicacion)
+    - [Labs](Ubicacion) ing electronica
+    - [Laboratorios electro](Ubicacion)
+    - Hubicacion [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"} electro
+    - [Laboratorios de ingenieria electronica](Ubicacion)
+    - [Laboratorios electronica](Ubicacion)
+    - [L1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - [Laboratorio general 1](Ubicacion)
+    - [Lab1](Ubicacion)
+    - [Baños de edificio de ingeniería](Ubicacion)
+    - [Laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"} (l1)
+    - [Laboratorio general l1](Ubicacion)
+    - [Lab general 1](Ubicacion)
+    - Dónde están los [baños]{"entity": "Ubicacion", "value": "BA\u00d1O"}
+    - En qué parte queda el salón [915](Ubicacion)
+    - Dónde queda el salón [915](Ubicacion)
+    - Dónde está el [salón 915](Ubicacion)
+    - Dónde está el [salón 815](Ubicacion)
+    - [Cafeterias](Ubicacion)
+    - Ubicación [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Ubicación salón [33](Ubicacion)
+    - Ubicación [salón](Ubicacion)
+    - Ubicación [salones]{"entity": "Ubicacion", "value": "SALON"}
+    - Ubicación [cafeterias]{"entity": "Ubicacion", "value": "CAFETERIA"}
+    - [Oficinas]{"entity": "Ubicacion", "value": "OFICINA"}
+    - Ubicación [oficinas](Ubicacion)
+    - Ubicación [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Ubicación [laboratorio l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Ubicación [oficina](Ubicacion)
+    - Ubicación [baños]{"entity": "Ubicacion", "value": "BA\u00d1O"}
+    - [Cafeterías](Ubicacion)
+    - Ubicación [cafetería](Ubicacion)
+    - [Laboratorio l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - [Baños]{"entity": "Ubicacion", "value": "BA\u00d1O"}
+    - [Labs eletronica](Ubicacion)
+    - Ubicación de la [Universidad de ibague](Ubicacion)
+    - Dónde está ubicada la [universidad](codigo_estudiantil)?
+    - [Laboratorio General]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - [Salón 24]{"entity": "Ubicacion", "value": "24"}
+    - [Salón 914]{"entity": "Ubicacion", "value": "914"}
+    - Dónde queda el salón [911](Ubicacion)
+    - [Baños bloque 1]{"entity": "Ubicacion", "value": "BA\u00d1OS BLOQUE 1"}
+    - [Baño bloque 1](Ubicacion)
+    - Donde queda [automatizacion]{"entity": "Ubicacion", "value": "AUTOMATIZACION"}
+    - [Oficina de psicologia](Ubicacion)
+    - Quiero saber ubicación de salón [52](Ubicacion)
+    - [Lab general](Ubicacion)
+    - [Labs](Ubicacion)
+    - universidad de ibague
+    - [biblioteca]{"entity": "Ubicacion", "value": "BIBLIOTECA"}
+    - cual es el [l5]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}?
+    - donde queda el [L5]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}?
+    - [Oficina de ingeniería electrónica](Ubicacion)
+    - [Oficina de programa]{"entity": "Ubicacion", "value": "OFICINA DE PROGRAMA INGENIERIA ELECTRONICA"}
+    - Dónde queda [electrónica](Ubicacion)
+    - Dónde queda el [programa de electrónica](Ubicacion)?
+    - Dónde queda el [baño](Ubicacion)
+    - Dónde queda el [baño de niñas](Ubicacion)
+    - Dónde queda el [laboratorio l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Dónde queda el [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Dónde está el [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Ubicación [baños laboratorios]{"entity": "Ubicacion", "value": "BA\u00d1OS LABS"}
+    - Donde que da la [oficina de fito](Ubicacion)!
+    - Entrada a la [universidad](Ubicacion)
+    - [Salón L5](Ubicacion)
+    - Dónde queda la [enfermería]{"entity": "Ubicacion", "value": "ENFERMER\u00cdA"}?
+    - Dónde está la [enfermería](Ubicacion)
+    - Dónde queda la [enfermería](Ubicacion)
+    - Donde quedan los [baños de ingeniería](Ubicacion)
+    - salon [915](Ubicacion)
+    - [salón 915](Ubicacion)
+    - [salón 700](Ubicacion)
+    - [salón 105]{"entity": "Ubicacion", "value": "105"}
+    - [salones]{"entity": "Ubicacion", "value": "SALON"}
+    - Necesito la ubicación del salón [11](Ubicacion)
+    - Ubicacion [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - [laboratorio de mecanica](Ubicacion)
+    - Donde puedo cagar cerca a [los bloques de ingenieria](codigo_estudiantil)
+    - Dónde queda el [lab l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - [Lab]{"entity": "Ubicacion", "value": "LABORATORIO"} proncipal
+    - Dónde quedan las salidas de [emergencia](Ubicacion)
+    - Necesito ir a un [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Ubicación del laboratorio de [automatización]{"entity": "Ubicacion", "value": "AUTOMATIZACION"}
+    - Ubicación de la [cafetería]{"entity": "Ubicacion", "value": "CAFETERIA"}
+    - Ubicación de [cafetería]{"entity": "Ubicacion", "value": "CAFETERIA"}
+    - \n [baños Laboratorios]{"entity": "Ubicacion", "value": "BA\u00d1OS LABS"}
+    - \n [baños Laboratioris](Ubicacion)
+    - \n donde quedan los [baños]{"entity": "Ubicacion", "value": "BA\u00d1O"}
+    - Como ir a los [laboratorios de lectronica](Ubicacion)
+    - Donde puedo encontrsr los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"} de electronica
+    - Donde estan los [laboratorios de electronica](Ubicacion)
+    - Necesito ir a los [laboratorios de electronica](Ubicacion)
+    - Necesito un [baño]{"entity": "Ubicacion", "value": "BA\u00d1O"}
+    - Dónde están los [baños]{"entity": "Ubicacion", "value": "BA\u00d1O"}?
+    - [Cafetería]{"entity": "Ubicacion", "value": "CAFETERIA"}
+    - Ubicación [cafeterías]{"entity": "Ubicacion", "value": "CAFETERIA"}
+    - Ubicación salon [33](Ubicacion)
+    - Ubicación de salón [11](Ubicacion)
+    - Ubicación [salon]{"entity": "Ubicacion", "value": "SALON"}
+    - quisiera saber donde esta la [cafeteria]{"entity": "Ubicacion", "value": "CAFETERIA"}
+    - Quisiera saber dónde están las [cafeterías]{"entity": "Ubicacion", "value": "CAFETERIA"}
+    - Quisiera saber dónde está la [cafetería]{"entity": "Ubicacion", "value": "CAFETERIA"}
+    - Quisiera saber dónde está la [cafeterías]{"entity": "Ubicacion", "value": "CAFETERIA"}
+- intent: servicio_calendario
+  examples: |
+    - Cual es el calendario estudiantil
+    - calendario estudiantil
+    - hay alguna fecha importante pronto?
+    - calendario de este semestre
+    - calendario de eventos
+    - Cual es el calendario para este semestre
+    - calendarios este año
+    - calendarios este semestre
+    - calendarios de este semestre
+    - calendarios
+    - necesito saber los calendarios de este semestre
+    - calendario de este año
+    - calendario para este semestre
+    - dime el calendario de este semestre
+    - cual es el calendario de este smestre de la universidad?
+    - calendario
+    - quiero saber de los calendarios de este semestre
+    - quiero saber el calendario estudiantil de este semestre
+    - cual seria el calendario de este semestre?
+    - calenadrio de este año
+    - ¿Cual es el calendario esrudiantil de este semestre?
+    - ¿Cuál es el calendario estudiantil de este semestre?
+    - Servicio calendario
+- intent: servicio_pensum
+  examples: |
+    - Cual es el plan de estudio de ingenieria electronica
+    - cual es el pensum de electronica
+    - plan de estudios electronica
+    - plan de estudios para este año
+    - Plan de estudios de electronica
+    - necesito informacion del pensum
+    - necesito informacion del pensim
+    - oye como es el plan de estudios
+    - como son los planes de estudios para electronica
+    - plan de estudios
+    - pensum
+    - pensum electronica
+    - Pensum electrónica
+    - quisiera saber del pensum
+    - quisiera saber el pensum de elecdtronica
+    - mamahuevo deme el pensum
+    - me ubica el pensum
+    - me puede enviar el pensum
+    - pensum ingenieria electronica
+    - Pensum
+    - pensun de la carrera
+    - fundamentos de matemáticas
+    - Electrónica [2](Ubicacion)
+    - Servicio pensum
+    - informacion de pensum
+- intent: servicio_casillero
+  examples: |
+    - cual es mi casillero
+    - que casillero me toco?
+    - listado de asignacion de casillero
+    - asignacion casilleros
+    - listado casilleros
+    - lista de casilleros
+    - casilleros
+    - Casillero
+    - cual es mi casillero?
+    - Listado de casilleros
+    - Cuál es mi casillero?
+    - servicio de casilleros
+    - Sabes que casillero me toca?
+    - que casillero me toca este semestre?
+    - me puedes dar la lista de casilleros
+
+- intent: servicio_horario_profesor
+  examples: |
+    - horarios de [luisa gallo]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+    - asesoria de [luisa]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+    - cual es el horario de asesoria de la profesora [Luisa Fernanda Gallo S\u00e1nchez]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+    - horarios de [barrero]{"entity": "Profesor", "value": "Oscar Barrero Mendoza"}
+    - asesoria de [oscar barrero]{"entity": "Profesor", "value": "Oscar Barrero Mendoza"}
+    - cual es el horario de asesoria del profesor [Oscar Barrero Mendoza](Profesor)
+    - horarios de [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - asesoria de [harold murcia]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - cual es el horario de asesoria del profesor [harold fabian murcia]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - horarios de [sandoval]{"entity": "Profesor", "value": "Carlos Alberto Sandoval C\u00e1rdenas"}
+    - asesoria de [carlos sandoval]{"entity": "Profesor", "value": "Carlos Alberto Sandoval C\u00e1rdenas"}
+    - cual es el horario de asesoria del profesor [Carlos Alberto Sandoval C\u00e1rdenas]{"entity": "Profesor", "value": "Carlos Alberto Sandoval C\u00e1rdenas"}
+    - horarios de [oswaldo]{"entity": "Profesor", "value": "Oswaldo L\u00f3pez Santos"}
+    - asesoria de [oswaldo lopez]{"entity": "Profesor", "value": "Oswaldo L\u00f3pez Santos"}
+    - cual es el horario de asesoria del profesor [oswaldo lopez santos]{"entity": "Profesor", "value": "Oswaldo L\u00f3pez Santos"}
+    - horarios de [william]{"entity": "Profesor", "value": "William Alexander Londo\u00f1o Mar\u00edn"}
+    - asesoria de [william]{"entity": "Profesor", "value": "William Alexander Londo\u00f1o Mar\u00edn"}
+    - cual es el horario de asesoria del profesor [william londoño]{"entity": "Profesor", "value": "William Alexander Londo\u00f1o Mar\u00edn"}
+    - horarios de [jose]{"entity": "Profesor", "value": "Jos\u00e9 Armando Fern\u00e1ndez Gallego"}
+    - asesoria de [jose armando]{"entity": "Profesor", "value": "Jos\u00e9 Armando Fern\u00e1ndez Gallego"}
+    - cual es el horario de asesoria del profesor [jose armando fernandez]{"entity": "Profesor", "value": "Jos\u00e9 Armando Fern\u00e1ndez Gallego"}
+    - horarios de [fito]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - asesoria de [rodolfo]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - cual es el horario de asesoria del profesor [rodolfo jose gutierrez]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - sabes los horarios de los profesores
+    - Horarios asesorías [Harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Asesorias [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Cuáles son los horarios del profesor [Rodolfo]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Cuáles son los horarios de [Rodolfo]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Horarios [fito]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Horarios [Rodolfo]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Cuales son los horarios de [Luisa]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}?
+    - cual es el horario del profesor [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Cuales son los horarios del profesor [rodolfo]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Cual es el horario de [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Horarios de [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Horario de [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Me puedes dar el horario de [fito]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"} porfavor
+    - Me puedes dar el horario de [rofolfo]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Horario de [fito]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"} por favor
+    - Horario de [fito]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - cual es el horario de [fito]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - En qué horario atiende [William Londoño]{"entity": "Profesor", "value": "William Alexander Londo\u00f1o Mar\u00edn"}
+    - Horario [luisa]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+    - Horario profesor [fito]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Horario ingeniero [Rodolfo]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Cual es el horario del profe [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}?
+    - Horarios atencion [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Horarios atención [Harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Horarios de atención de [Harold Murcia]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - [Oswaldo López Santos]{"entity": "Profesor", "value": "Oswaldo L\u00f3pez Santos"}
+    - [Harold Fabián Murcia]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - [Harold Murcia]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Horarios [Luisa]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+    - Horario de asesoría de [luisa]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+    - Horario de atención [Harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Horario de atención de [luisa]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+    - Horario [fito]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Horario [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Horarios [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Horario de [oscar]{"entity": "Profesor", "value": "Oscar Barrero Mendoza"}
+    - Horario de [barrero]{"entity": "Profesor", "value": "Oscar Barrero Mendoza"}
+    - Horario de [william]{"entity": "Profesor", "value": "William Alexander Londo\u00f1o Mar\u00edn"}
+    - Horario de [luisa]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+    - Horarios [Oscar]{"entity": "Profesor", "value": "Oscar Barrero Mendoza"}
+    - Horario de [oswaldo]{"entity": "Profesor", "value": "Oswaldo L\u00f3pez Santos"}
+    - [Diego valencia]{"entity": "Profesor", "value": "Diego Valencia"}
+    - Qué horario disponible tienen [Harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Cual es el horario de tutoría del profe [harold]{"entity": "Profesor", "value": "Harold Fabi\u00e1n Murcia Moreno"}
+    - Cual es el horario de tutoría del profe [rodolfo]{"entity": "Profesor", "value": "Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales"}
+    - Horario de [diego]{"entity": "Profesor", "value": "Diego Valencia"}
+    - Horario de [diego valencia]{"entity": "Profesor", "value": "Diego Valencia"}
+    - Me puedes dar el horario de [valencia]{"entity": "Profesor", "value": "Diego Valencia"}
+    - Me das el horario del profesor [diego]{"entity": "Profesor", "value": "Diego Valencia"}
+    - Horario [valencia]{"entity": "Profesor", "value": "Diego Valencia"}
+    - Dame información de [William]{"entity": "Profesor", "value": "William Londo\u00f1o Mar\u00edn"}
+    - Dame información de [Willian Londoño]{"entity": "Profesor", "value": "William Londo\u00f1o Mar\u00edn"}
+    - intent: horario_laboratorio
+    - Horario de atención
+    - Servicio horarios
+    - Horario
+    - Horario de los profesores
+    - Horarios profesor
+- intent: actividades_extra
+  examples: |
+    - cuales son los talleres libres de la universidad
+    - actividades estrariculares
+    - horarios ajedrez
+    - horario rumba
+    - horario natacion
+    - horario voleibol
+    - horario gimnasio
+    - horario tenis de campo
+    - horario entrenamiento funcional
+    - Actividades extracurriculares
+    - Horario de gimnasio
+    - horario practicas libres
+    - Cuales son las actividades extracurriculares
+    - Talleres libres
+    - Cuáles son los talleres libres???
+    - que cosas se pueden hacer en la u además de estudiar?
+    - que puedo hacer en mi tiempo libre?
+    - estoy cansado de estudiar
+    - que se puede hacer divertido en la unibague
+    - la universidad tiene deportes libres?
+    - cuales son los horarios de los talleres libres
+    - además de estudiar que se hace?
+    - que deportes ofrece la universidad?
+    - quiero jugar
+    - quiero bailar
+    - quiero hacer deporte
+- intent: horario_laboratorio
+  examples: |
+    - Que horarios libres tiene el [laboratorio L1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Que horarios libres tienen los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horarios [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - [Lab electronica]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Que [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"} hay disponibles
+    - Horarios [lab]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horarios de los [laboratirios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario [l2]{"entity": "Ubicacion", "value": "LABORATORIO INDUSTRIAL (L2)"}
+    - Horario [laboratorio l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Horario [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - cuales son los horarios del [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - horarios [laboratorip]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Necesito un [lab]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Que horarios manejan los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Necesito un [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Horario del [lab telecomunicaciones]{"entity": "Ubicacion", "value": "LABORATORIO TELECOMUNICACIONES (L6)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+- intent: reglamento_estudiantil
+  examples: |
+    - reglamento estudiantil
+    - cual es el reglamento estudiantil
+    - derechos y deberes de los estudiantes
+    - manual de convivencia
+    - cuales son las faltas y las sanciones
+    - Reglamento estudiantil
+    - me puedes dar el reglamento estudiantil?
+    - manual
+
+
+# comienzo normas
+- intent: valor_derechos_grado
+  examples: |
+    - ¿Cuánto es el valor a pagar por los derechos de grado?
+    - cuanto tengo que pagar para graduarme
+    - valor de derechos de grado
+    - cuanto toca pagar para los derechos de grado
+    - cuanto cuestan los derechos de grado
+    - Valor derecho de grado
+- intent: valor_semestre_electronica
+  examples: |
+    - ¿Cuál es el valor a pagar por el semestre académico para Ingeniería Electrónica?
+    - cuanto cuesta el semestre de electonica
+    - valor del semestre de electonica
+    - cuanto cuesta la matricula para ingenieria electronica
+    - Cuánto cuesta la matrícula
+    - Cual es el costo del semestre de electronica
+- intent: valor_derecho_inscripcion
+  examples: |
+    - ¿Cuál es el valor del derecho de inscripción a Programas de Pregrado?
+    - cuanto cuasta la inscripcion de pregrado
+    - valor de la inscripcion de pregrado
+    - cuanto cuesta la inscripcion de pregrado
+    - valor de inscripcion de ingenieria electronica
+- intent: creditos_electivas_profesionales
+  examples: |
+    - ¿Para ver las electivas profesionales, cuántos créditos debo tener aprobados?
+    - cuantos creditos necesito para ver electivas profesionales
+    - cuando puedo ver electivas profesionales
+    - a los cuantos creditos aprobados puedo meter electivas profesionales
+- intent: creditos_matricula_de_prueba
+  examples: |
+    - ¿Cuántos créditos puedo ver, si tengo matrícula de prueba?
+    - cuantos creditos puedo meter si estoy en semestre de pueba?
+    - estando en semestre de pureba cuantos creditos puedo ver
+    - en matricula de prueba cuantos creditos puedo meter
+- intent: costo_certificado_de_estudio
+  examples: |
+    - ¿Qué costo tiene un certificado o constancia de estudio?
+    - cuanto cuesta un certificado de estudio
+    - cuanto cuesta una constancia de estudio
+    - valor de certificado de estudio
+    - costo de un certificado de estudio
+- intent: pago_certificado_de_estudio
+  examples: |
+    - ¿Dónde puedo pagar una constancia de estudio?
+    - donde se pagan los certificados de estudio
+    - donde tengo que pagar la constancia de estudio
+    - lugar donde se cancela el certificado de estudio
+- intent: contenido_programatico
+  examples: |
+    - ¿Cuánto cuesta la generación de un contenido programático?
+    - valor de un contenido tematico
+    - cuanto vale imprimir el contenido tematico
+    - cuanto cuesta un contenido programatico
+    - donde pago un contenido tematico
+    - donde cancelo un contenido programatico
+    - Necesito el listado de temas que vi en mi materia
+- intent: valor_supletorio
+  examples: |
+    - ¿Cuánto debo pagar por un supletorio?
+    - cuanto cuesta un supletorio
+    - valor de un supletorio
+    - cuanto vale un supletorio
+- intent: valor_validacion
+  examples: |
+    - ¿Cuánto cuesta una validación?
+    - cuanto cuesta una validacion
+    - valor de una validacion
+    - cuanto vale una validacion
+- intent: valor_carnet_estudiantil
+  examples: |
+    - ¿Cuánto cuesta generar un nuevo carnet estudiantil?
+    - valor de un carnet estudiantil
+    - cuanto vale sacar un carnet estudiantil
+    - cuanto cuesta un nuevo carnet estudiantil
+    - valor de un nuevo carnet
+    - se me daño mi carnet
+- intent: cancelar_materia
+  examples: |
+    - ¿Si necesito cancelar una asignatura a que área debo dirigirme?
+    - donde puedo canselar una materia
+    - donde se cansela una asignatuda
+    - lugar donde se cancelas las asignaturas
+    - Cancelar semestre
+    - Quiero saber fechas de cancelación de semestre
+    - donde cancelo materias?
+- intent: modalidades_de_trabajo_de_grado
+  examples: |
+    - ¿Cuales son las modalidades de trabajo de grado?
+    - cuales son las opciones para hacer trabajo de grado
+    - que tipos de trabajo de grado hay
+    - cuales son los metodos para hacer mi trabajo de grado
+    - modalidad trabajo de grado
+    - modalides trabajo de grado
+    - como puedo obtener mi grado
+    - que es el trabajo de grado
+    - modalidades de grado
+    - modalidad
+- intent: requisitos_graduacion
+  examples: |
+    - requisitos para graduarme
+    - que debo hacer para graduarme
+    - me quiero graduar
+    - Requisitos para grado
+    - Requisitos de grado
+    - Cuáles son los requisitos de grado
+    - ¿Cuáles son los requisitos para que un estudiante se gradué?
+    - ¿Cuálesson los requisitos para que un estudiante se gradué?
+    - ¿Cuales son los requisitos para que un estudiante se gradué?
+    - Cuales son los requisitos para que un estudiante se gradué?
+- intent: queja_docente
+  examples: |
+    - que hago si tengo una queja de un docente
+    - un docente esta siendo injusto conmigo
+    - mi profesor me la tiene montada
+    - tengo un problema con mi docente
+    - con quien hablo para quejareme de un profesor
+    - mi docente se esta aprovechando
+    - donde puedo reportar un docente
+    - quiero hacer una queja de un profesor
+    - me quiero quejar de un docente
+    - me quiero quejar de un ingeniero
+    - el ingeniero jode demasiado
+    - mi profesor me esta acosando
+    - Tengo una queja de un docente
+- intent: buen_promedio
+  examples: |
+    - si tengo buen promedio, eso me sirve?
+    - para que me sirve un buen promedio en la unibague
+    - que me da la universidad si tengo un primerio exelente
+    - los buenos estudiantes de la universidad que benficios tienen
+    - que me puede brindar la universidad por un promedio sobresaliente
+    - la universidad le da algo a los buenos estudiantes?
+- intent: segundo_calificador
+  examples: |
+    - donde puedo pedir un segundo calificador
+    - siento que me calificaron mi examen injustamente
+    - quisiera tener un segundo calificador
+    - necesito un segundo calificador
+    - el que me califico el examen no sabe calificar
+    - mi profesor me califico mal, que hago?
+    - siento que merezco mas nota en mi parcial
+    - quiero que otro profesor me califique mi parcial
+    - necesito la opionion de otro profesor en mi examen
+    - quisiera la opinion de otro profesor en mi nota
+- intent: incapacidad_entregas
+  examples: |
+    - que pasa si me enfermo el dia del examen
+    - estoy enfermo y no puedo ir a la universidad
+    - No puedo ir a la entrega de mi trabajo
+    - no puedo presentar un examen por fuerza mayor
+    - en donde me pueden escuchar la sugerencia
+    - no pude ir a la universidad y pusieron un taller
+    - No pude asistir al examen por una gripe
+    - tengo gripa y hoy tengo un examen
+    - dejaron trabajo el dia que no fui
+    - estoy enfermo y no puedo ir a la u
+    - me accidente y no puedo asistir a la universidad
+    - Como puedo escirbir una incapacidad
+    - tengo parcial mañana pero me estoy enfermando
+    - estoy maluco y no puedo ir a la universidad
+- intent: materias_intersemestral
+  examples: |
+    - cuales materias hay en el intersemestral
+    - que materias hay intersemestrales
+    - como hago para ver una materia intersemestral
+    - materias intersemestrales
+    - cuantos estudiantes se necesitan para abrir una materia intersemestral?
+    - se pueden ver materia en vacaciones?
+    - que materias se pueden ver en intersemestral
+    - numero de estudiantes requeridos para una materia intersemestral
+    - paterias disponibles en intersemestral
+- intent: escuela_verano
+  examples: |
+    - cuanto cuenta un curso de escuela de verano?
+    - que materias puedo ver en escuela de vernao
+    - que es escuela de vernao
+    - cuanto dura escuela de verano
+    - se pueden adelantar creditos en escuela de verano?
+    - como puedo ver escuela de verano?
+    - cuentos creditos puedo adelantar en escuela de verano?
+    - como adelanto creditos en escuela de verano?
+    - costo de un curso en escuela de verano
+    - que vale un curso de escuela de verano
+- intent: intercambios
+  examples: |
+    - como es la vuelta con los intercambios
+    - como puedo irme de intercambio
+    - que es un intercambio
+    - informacion de los intercambios de la universidad
+    - a que paises me puedo ir de intercambio
+    - Como puedo aplicar a un intercambio
+    - yo como me puedo ir del pais?
+- intent: convenios
+  examples: |
+    - que universidades tiene convenios con la unibague
+    - informacion sobre los combenios con la universidad
+    - convenios con la universidad de ibague
+    - que convenios tiene la u
+    - cuales convenios tiene la universidad de ibague
+    - como puedo aplicar a un convenio
+    - la universidad tiene convenios con gimnasios o centros vacacionales?
+    - que beneficios tengo por estudiar en la unibague
+    - beneficios de la universidad de ibague
+- intent: creditos
+  examples: |
+    - cuantos creditos puedo ver en el semestre
+    - que costo tienen los porcentages de creditos
+    - puedo aumentar los creditos vistos en el semestre?
+    - Total de creditos que puedo agregar
+    - cantidad de creditos que puedo ver
+    - como puedo obtener mas de 20 creditos
+    - cuantos creditos deberia meter?
+    - 20 creditos estan muy sencillos, como puedo obtener mas?
+    - Número maximo de créditos por semestre?
+- intent: proceso_trabajo_grado
+  examples: |
+    - como matriculo trabajo de grado
+    - cuando puedo matricular trabajo de grado?
+    - proceso para mteter trabajo de grado
+    - cuanto tiempo tengo para hacer mi trabajo de grado
+    - trabajo de grado
+    - cuando puedo meter trabajo de grado
+    - cuantos creditos deberia meter?
+    - tengo que primero presentar mi anteproyecto
+    - puedo tener un trabajo de grado grupal?
+    - como es la vuelta para hacer el proyecto de grado
+- intent: doble_titulacion
+  examples: |
+    - como hago para tener doble titulacion
+    - cuanto tiempo extra demora la doble titulación?
+    - nformacion sobre la doble titulacion
+    - que se hace para entrar a doble titulación
+    - que carreras permiten la doble titulación
+    - como puedo titularme dos veces
+    - profesiones que permiten la titulacion doble
+    - Cómo puedo hacer doble titulación
+    - Cómo hago para tener dos títulos?
+    - Cómo hago para sacar dos carreras?
+- intent: daño_propiedad_unibague
+  examples: |
+    - que pasa si daño algo de la u
+    - se debe de pagar si se daña algo en la u
+    - acabo de romper algo en la u
+    - ue paso si rompo algo en la universidad
+    - dañé algo de la universidad que hago?
+    - rompi una silla, que pasa?
+    - que ocurre cuando se daña algo de la universidad
+- intent: plagio_sancion
+  examples: |
+    - cual es la sansion por hacer trampa
+    - sansiones que tiene la universidad si hago trampa
+    - si hice plagio, cuales son las posibles sanciones
+    - posibles sansiones diciplinarias si hice trampa
+    - sanciones comunes de la universidad por tramapa
+    - tengo sansion si cometo algo mal
+    - que pasa si me pillan la chiva?
+    - que pasa si mi amigo me pasa las respuestas en el examen?
+    - Que pasa si me copio en un trabajo o examen?
+    - si me descubren haciendo copia que pasa?
+    - que es lo peor que me puede pasar si me copio en un examen
+- intent: creditos_intersemestral
+  examples: |
+    - cuantos creditos puedo matricular en intersemstral
+    - cuantos creditos puedo ver en escual de verano
+    - creditos totales maximos en intersemestral
+    - maximo de creditos en escuela de verano
+    - hasta cuantos creditos puedo adelantar en escuela de verano
+    - hasta cuantos creditos puedo matricular en intersemestral
+    - numero de creditos maximo en intersemestral
+    - cuanto puedo adelantar en intersemestral
+    - Cuantos créditos puedo meter intersemestral?
+- intent: costos_creditos
+  examples: |
+    - cuantos creditos puedo matricular con el 50% de la matricula
+    - cuanto me cuensta ver siete creditos
+    - ver mas de 20 creditos tiene un costo adicional
+    - cuantos creditos puede uno ver pagando el 30% de la matricula
+    - que pasa si solo matriculo el 50% de materias
+    - es posible pagar medio matricula
+    - cuanto me cuesta ver solo una materia
+    - Costos de matrícula por creditos
+    - Que me cuesta el semestre si matriculo 3 materias
+    - que me cuestan 10 créditos?
+    - Cuanto cuestan los créditos?
+    - que costo tiene por porcentage los créditos?
+    - costo porcentages de creditos
+    - costo porcentage de matricula
+    - que me cuesta un semestre de solo trabajo de grado?
+- intent: requisitos_monitor
+  examples: |
+    - como me hago monitor?
+    - cuales son los requisitos para ser moinitor
+    - que necesito para ser monitor?
+    - que debo cumplir para ser monitor
+    - requisitos para ser monitor
+    - requerimientos monitor
+    - Que tengo que cumplir para volverme monitor?
+- intent: becas_descuentos
+  examples: |
+    - cuales son las becas de la universidad?
+    - cuales son los descuentos de la universidad?
+    - como obtengo becas?
+    - becas y descuentos
+    - descuentos de la universidad
+- intent: funcion_monitores
+  examples: |
+    - ¿Cuales son las funciones de los monitores?
+    - Que hace un monitor?
+    - Que se supone que hace un monitor?
+    - Que funcion tiene monitor?
+    - monitores
+    - cual es la funcion de ser un monitor
+- intent: requisitos_locker
+  examples: |
+    - Como me pueden dar mi locker?
+    - Como obtengo mi locker?
+    - requisitos locker?
+    - requisitos para tener un locker?
+    - como obtengo un casillero?
+    - Como puedo pedir un casillero?
+    - Que tengo que cumplir para tener un casillero?
+    - requisitos casillero
+    - Como obtengo un casillero
+    - Requisitos para tener un casillero
+    - quiero un casillero, como hago para tener una?
+    - como consigo un casillero
+    - los casilleros para quienes van?
+    - Como es la vuelta con los casilleros?
+    - Necesito un casillero
+- intent: capacidad_laboratorios
+  examples: |
+    - ¿cual es la capacidad maxima de los laboratorios?
+    - cual es el aforo maximo del lab L1
+    - capacidad maxima del laboratorio general
+    - cuantas personas caben en el l1
+    - cual es la capacidad maxima del lab L2
+    - capacidad maxima del laboratorio industrial
+    - cuantas personas caben en el l4
+    - cual es el aforo maximo del lab L4
+    - capacidad maxima del laboratorio de electromedicina
+    - cual es la capacidad maxima del lab L5
+    - aforo maximo del laboratorio de telecomunicaciones
+    - cuantas personas caben en el l5
+    - cual es la capacidad maxima del lab L6
+    - capacidad maxima del laboratorio de software
+    - Cual es la capacidad máxima de los Labs?
+- intent: proceso_citasPsico
+  examples: |
+    - como puedo tener una cita con la psicologa?
+    - hablar con la psicologa?
+    - quiero un psicologo?
+    - quiero hablar con la psicologa
+    - como contacto la psicologa
+    - necesito la psicologa
+    - necesito terapia
+    - necesito alguien que me escuche
+    - estoy triste, necesito ayuda
+    - no estoy bien
+- intent: formato_proyecto_de_grado
+  examples: |
+    - ¿Dónde encuentro los formatos para proyecto de grado?
+    - formatos para proyectos de grado
+    - estoy buscando los formatos para trabajo de grado
+    - cual es el formato de trabajo de grado
+    - cual formato debo usar para mi trabajo de grado
+    - Donde encuentro los formatos para proyecto de grado?
+    - Quiero información sobre formatos para trabajo de grado
+- intent: profesores_de_electronica
+  examples: |
+    - ¿Quienes son los profesores de Electrónica?
+    - cuales son los profesores de electronica
+    - profesores de electronica
+    - necesito conocer los profesores de electronica
+    - donde encuentro los profesores de electronica
+    - como se llaman los profesores de electronica
+    - Como se llaman los profesores de electrónica
+    - Cuales son los profesores de electrónica?
+    - Que profesores hay en electronica?
+    - Profesores
+    - Profesores de electrónica
+    - profesores de electrónica
+    - ¿Quiénes son los profesores de Electrónica?
+    - quien es [luisa gallo]{"entity": "Profesor", "value": "Luisa Fernanda Gallo S\u00e1nchez"}
+- intent: sitio_web_electronica
+  examples: |
+    - ¿Cuál es el sitio oficial de ingeniería Electrónica?
+    - pagina web de electronica
+    - cual es la pagina de electronica
+    - link de la pagina de electronica
+    - ¿Cuál es el sitio oficial de ingeniería electrónica?
+    - cual es la página de electrónica
+    - la carrera de electrónica tirnr página web?
+    - pagina de electrónica
+- intent: METIE
+  examples: |
+    - ¿Qué es METIE?
+    - que es metie
+    - que es la muestra de electonica
+    - que se hace en la muestra de electronica
+    - no se que es metie
+    - no se que es la muestra de electronica
+    - ¿Que es METIE?
+    - Que es METIE
+- intent: semilleros
+  examples: |
+    - Informacion sobre los semilleros
+    - sabes sobre que semilleros hay?
+    - informacion de semilleros
+    - Semilleros
+    - Cuales son los semilleros
+    - informacion semilleros
+    - ¿Qué semilleros de investigación tiene el programa de Electrónica y cómo puedo vincularme?
+    - semilleros de electronica
+    - cuales son los semilleros de electronica
+    - como entro a los semilleros de electronica
+    - como hago parte de los semilleros de electronica
+    - no se cuales son los semilleros de electonica
+    - necsito informacion de los semilleros
+    - Cuales son los semilleros de electrónica?
+    - necesito informacion sobre los semilleros
+- intent: contacto_programa
+  examples: |
+    - ¿Cuál es la extensión del programa?
+    - contacto de programa
+    - numero fijo del programa
+    - comunicar al programa
+    - como llamo al programa
+    - necesito comunicarme con el programa de electronica
+    - extencion del programa de electronica
+    - ¿Cual es la extensión del programa?
+    - Extensión de electronica
+    - cual es el telefono del [programa]{"entity": "Ubicacion", "value": "OFICINA DE PROGRAMA INGENIERIA ELECTRONICA"}
+    - cual es el número de electrónica?
+    - cual es el correo de electronica?
+    - electrónica tiene facebook?
+    - como me contacto con ingenieria electrónica?
+    - cual es el numero para llamar a electrónica?
+- intent: Area_constancia_de_estudio
+  examples: |
+    - ¿Cuál es el área encargada de las constancias de estudio?
+    - quien me da una constancia de estudio
+    - donde puedo sacar un certificado de estudio
+    - quien es el encargado de los certificados de estudio
+- intent: encargado_labs_electronica
+  examples: |
+    - quien es el encargado de los laboratorios de electronica
+    - quien esta pendiente de los laboratorios de electronica
+    - quien me puede informar sobre los casilleros
+    - quien es ese tal diego?
+    - quien me puede pasar los instrumentos del laboratorio
+    - donde puedo encontrar el encargado de los labs
+- intent: sugerencias_universidad
+  examples: |
+    - si quiero sugerir algo a la universidad, a donde me dirigo
+    - quiero presentar una sugerencia a la u
+    - quiero sugerir un cambio a la universidad
+    - quiero sugerir algo
+    - en donde me pueden escuchar la sugerencia
+    - me gustaria que hicieran un cambio
+    - quiero cambiar algo
+    - quiero hacer un cambio en la universidad
+    - me gustaria que fuera diferente
+- intent: horarios_universidad
+  examples: |
+    - a que hora cierra y abre la unibague
+    - horario de la universidad
+    - a que horas cierran la universidad
+    - horario de la u
+    - desde que horas esta abierta la universidad?
+    - puedo estar en la universidad despues de cerrado
+    - a que hora puedo entrar a la universidad
+    - a que hora abre la u?
+- intent: apartar_salon
+  examples: |
+    - se puede pedir un salon para uso personal?
+    - donde puedo separar un salon de clase?
+    - como hago para separar un salon
+    - es posible apartar un salon
+    - donde puedo conocer los horarios libres para los salones en la universidad
+    - como pido un salon?
+    - quiero pedir un salon
+- intent: buses_universidad
+  examples: |
+    - que bus me sirve para ir a la universidad
+    - donde puedo coger bus para ir a la univerisdad
+    - que bus me sirve para ir a la sede deportiva de la universidad
+    - que bus me sirve para ir a santa ana
+    - que bus cojo para ir a la u
+    - que bus me lleva a santa ana
+    - quiero ir a la universidad en bus
+    - bus para la sede deportiva de la u
+- intent: alejandria
+  examples: |
+    - qusiera buscar un libro
+    - link de alejandria
+    - buscar un libro
+    - quiero buscar u libro
+    - ayuda en buscar un libro
+    - ayuda para buscar un libro
+    - quiero buscar un libro
+    - informacion libro
+    - Quiero buscar un libro
+    - se me olvido, necesito buscar un libro
+    - quiero buscar un libro me ayudas
+    - ayudame necesito buscar un libro
+    - alejandria
+    - neceisto ayuda en buscar un libro
+    - Reservar un libro
+- intent: apoyoFinanciero
+  examples: |
+    - sabes el numero de apoyo financiero?
+    - Cual es el correo de apoyo?
+    - link de apoyo financiero
+    - ayuda financiera
+    - pagina de apoyo financiero
+- intent: centro_Idiomas
+  examples: |
+    - cual es el numero del centro de idiomas?
+    - la universidad enseña ingles, aleman, frances,potugues, chino
+    - link del centro de idiomas
+    - centro de idiomas
+    - link centro de idiomas
+    - quiero info del centro de idiomas
+    - Inglés
+    - Ingles
+    - Cuando son las matrículas de inglés
+    - Matrículas de inglés
+    - Fechas de matrícula de inglés
+    - Cuando son las inscripciones de ingles
+# fin normas
+
+- synonym: LABORATORIO GENERAL (L1)
+  examples: |
+    - lab L1
+    - laboratorio L1
+    - laboratorio general
+    - lab 1
+    - L1
+    - Laboratorio general
+    - laboratorio l1
+    - Laboratorio l1
+    - Laboratorio General
+    - l1
+    - lab l1
+    - Laboratorio general 1
+    - Lab1
+    - Laboratorio general l1
+    - Lab general 1
+- synonym: LABORATORIO INDUSTRIAL (L2)
+  examples: |
+    - laboratorio L2
+    - laboratorio industrial
+    - l2
+    - Laboratorio industrial
+    - lab 2
+- synonym: LABORATORIO ELECTROMEDICINA (L4)
+  examples: |
+    - Lab de electromedicina
+    - Labpratorio de electromedicina
+    - electromedicina
+- synonym: LABORATORIO DE TELECOMUNICACIONES (L5)
+  examples: |
+    - laboratorio de telecomunicaciones
+    - lab L5
+    - telecomunicaciones
+    - laboratorio l5
+    - Laboratorio L5
+    - L5
+    - l5
+    - Laboratorio de telecomunicaciones
+    - lab 5
+- synonym: LABORATORIO DE SOFTWARE (L6)
+  examples: |
+    - lab L6
+    - laboratorio de software
+    - L6
+    - Laboratorio de software
+    - lab 6
+    - l6
+- synonym: OFICINA PSICOLOGA
+  examples: |
+    - oficina de la psicologa
+    - psicologa
+    - oficina psicóloga
+    - psicologia
+    - oficina de psicología
+    - Oficina de psicologia
+    - piscologa
+- synonym: SALA PROFESORES 1
+  examples: |
+    - sala de profesores 1
+    - oficina de fito
+    - oficina de rodolfo gutierrez
+    - oficina de rodolfo
+    - oficina de oswaldo
+    - oficina de oswaldo lopez
+    - oficina de osvaldo lopez
+    - oficina de osvaldo
+    - oficina de sandoval
+    - oficina de carlos sandoval
+    - oficina de harold
+    - oficina de murcia
+    - oficina de Jose Fernando
+    - oficina de Fernando
+    - oficina de oscar barrero
+- synonym: SALA PROFESORES 2
+  examples: |
+    - sala de profesores 2
+    - oficina de barrero
+- synonym: AUTOMATIZACION
+  examples: |
+    - semillero de robotica
+    - automatizacion
+    - automatización
+    - Automatizacion
+- synonym: BAÑOS LABS
+  examples: |
+    - baños de los laboratorios
+    - baños de labs
+    - baños de lab
+    - baños laboratorios
+    - baños Laboratorios
+    - Baños Laboratorios
+    - Baños laboratorios
+    - baño de los laboratorios
+    - Baños lab
+    - Baños del lab
+    - Baños de los laboratorios
+    - Baños laboratorio
+    - baños en el lab
+    - baño laboratorio
+    - baño del laboratorio
+    - baños de laboratorio
+    - baño de laboratorio
+    - baños del laboratorio
+    - baños del lab
+    - baños de los labs
+    - Baños de los labs
+    - Baño en los labs
+    - baño en los labs
+
+
+
+
+
+
+
+- synonym: OFICINA DE PROGRAMA INGENIERIA ELECTRONICA
+  examples: |
+    - programa de ingenieria electronica
+    - programa de ingenieria
+    - Oficina de programa
+    - programa
+    - Oficina electronica
+    - oficina de programa
+    - ingenieria electronica
+    - oficina de luisa
+    - oficina del director de programa
+    - oficina de electronica
+    - Oficina de ingeniería electrónica
+    - electrónica
+    - programa de electrónica
+    - oficina de ingeniería electrónica
+    - oficina del programa
+    - oficina programa ingeniería electrónica
+    - oficina de programa de ingeniería electrónica
+    - oficina del programa de ingenieria electronica
+    - oficina programa
+    - programa ingenieria electronica
+    - programa ingeniería electrónica
+
+
+- synonym: CAFETERIA INGENIERIA
+  examples: |
+    - Cafetería de ingeniería
+    - cafetería de ingenieria
+    - cafetería de ing
+    - cafeteria de ingenieria
+    - cafeteria de ingeniería
+    - cafeteria ing
+    - Cafetería del edificio de ingeniería
+    - cafetería del edificio de ingeniería
+    - cafetería de ingeniería
+    - comedor edificio de ingeniería
+    - Comedor edificio de ingeniería
+    - tienda de Ingeniería
+    - Tienda de Ingeniería
+    - cafeteria del edificio de ingenieria
+    - comedor ing
+    - Comedor ing
+    - tienda ing
+    - Tienda ing
+    - cafeteria ingenieria
+    - Cafeteria ingenieria
+    - Cafetería ingeniería
+    - cafetería ingeniería
+    - cafetería ingenieria
+    - cafeteria ingeniería
+
+- synonym: BAÑOS INGENIERIA
+  examples: |
+    - baños de ingenieria
+    - Baños de edificio de ingeniería
+    - baños de ingeniería
+    - baños ing
+    - Baños de ing
+    - baño del edificio de ing
+    - Baño del edificio de ing
+    - Baños de ingeniería
+    - cagadero de ingeniería
+- synonym: '914'
+  examples: |
+    - salón 914
+    - Salón 914
+- synonym: '813'
+  examples: |
+    - salón 813
+- synonym: '812'
+  examples: |
+    - salón 812
+- synonym: '811'
+  examples: |
+    - salón 811
+- synonym: '822'
+  examples: |
+    - salón 822
+- synonym: '924'
+  examples: |
+    - salón 924
+- synonym: '823'
+  examples: |
+    - salón 823
+- synonym: '925'
+  examples: |
+    - salón 925
+- synonym: '916'
+  examples: |
+    - salón 916
+- synonym: '75'
+  examples: |
+    - salón 75
+- synonym: '74'
+  examples: |
+    - salón 74
+- synonym: '73'
+  examples: |
+    - salón 73
+- synonym: BAÑOS BLOQUE 7
+  examples: |
+    - baños bloque 7
+    - baños del bloque 7
+    - baño bloque siete
+    - bloque siete baños
+    - Baño bloque 7
+    - Baños del bloque siete
+    - Bloque 7 baños
+    - Bloque siete baños
+    - Bloque 7 baños
+    - baño del bloque 7
+    - baño del bloque 7
+    - baños en el bloque 7
+    - baños en el bloque siete
+    - Baños en el bloque 7
+    - Baños en el bloque siete
+
+
+- synonym: '61'
+  examples: |
+    - salón 61
+- synonym: '62'
+  examples: |
+    - salón 62
+- synonym: '63'
+  examples: |
+    - salón 63
+- synonym: '64'
+  examples: |
+    - salón 64
+- synonym: '65'
+  examples: |
+    - salón 65
+    - Salón 65
+- synonym: '56'
+  examples: |
+    - salón 56
+- synonym: '55'
+  examples: |
+    - salón 55
+- synonym: '54'
+  examples: |
+    - salón 54
+- synonym: '53'
+  examples: |
+    - salón 53
+- synonym: '52'
+  examples: |
+    - salón 52
+- synonym: '51'
+  examples: |
+    - salón 51
+- synonym: CAFETERIA CENTRAL
+  examples: |
+    - cafeteria central
+    - Cafetería central
+    - Cafeteria central
+    - cafetería central
+    - Cafeteria principal
+    - Cafetería principal
+    - cafeteria de almuerzos
+    - Cafeteria de almorzar
+    - restaurante unibague
+    - Restaurante unibagué
+    - Restaurante unibague
+    - restaurante de la u
+    - Restaurante de la u
+    - almuerzo unibague
+    - Almuerzo unibagué
+    - Cafetería de almuerzos
+- synonym: '41'
+  examples: |
+    - salón 41
+- synonym: '42'
+  examples: |
+    - salón 42
+- synonym: '43'
+  examples: |
+    - salón 43
+- synonym: '44'
+  examples: |
+    - salón 44
+- synonym: '45'
+  examples: |
+    - salón 45
+- synonym: BAÑOS BLOQUE 4
+  examples: |
+    - baños del bloque 4
+    - baño del bloque 4
+    - baño bloque cuatro
+    - bloque cuatro baños
+    - Baños del bloque 4
+    - Bloque 4 baños
+    - Bloque cuatro baños
+    - Baño bloque 4
+    - baños de bloque 4
+    - baño en bloque 4
+    - Baños de bloque 4
+    - baños en el bloque 4
+    - baños en el bloque cuatro
+    - Baños en el bloque 4
+    - Baños en el bloque tcuatro
+    - baños del bloque cuatro
+    - Baños del bloque cuatro
+
+
+
+
+
+- synonym: BAÑOS BLOQUE 3
+  examples: |
+    - baños del bloque 3
+    - baño del bloque 3
+    - baño bloque tres
+    - Baños bloque tres
+    - bloque tres baños
+    - Baños del bloque 3
+    - Bloque 3 baños
+    - Bloque tres baños
+    - Baño bloque 3
+    - baño en el bloque 3
+    - baños en el bloque 3
+    - baños en el bloque tres
+    - Baños en el bloque 3
+    - Baños en el bloque tres
+- synonym: '35'
+  examples: |
+    - salón 35
+- synonym: '34'
+  examples: |
+    - salón 34
+- synonym: '33'
+  examples: |
+    - salón 33
+- synonym: '32'
+  examples: |
+    - salón 32
+- synonym: '31'
+  examples: |
+    - salón 31
+- synonym: '25'
+  examples: |
+    - salón 25
+- synonym: '26'
+  examples: |
+    - salón 26
+- synonym: BAÑOS BLOQUE 1
+  examples: |
+    - baños bloque 1
+    - Baños bloque 1
+    - Baños del bloque uno
+    - Baño bloque 1
+    - baño en el bloque uno
+    - baños bloque uno
+    - baños de arquitectura
+    - Baño de arquitectura
+    - baño de diseño
+    - Baños de lo des diseño
+    - Baños cerca de arquitectura
+    - Baños de diseño
+    - Baños de arquitectura
+    - Baños bloque uno
+    - Bloque uno baños
+    - Bloque 1 baños
+    - bloque 1 baños
+    - baño de los de diseño
+    - baño de los de arquitectura
+    - baño del bloque 1
+    - baños en el bloque 1
+    - baños en el bloque uno
+    - baños del bloque de arquitectura
+    - Baños del bloque de arquitectura
+    - baños del bloque de diseño
+    - Baños del bloque de diseño
+    - Baño en el bloque de diseño
+    - baño en el bloque de diseño
+    - Baño en el bloque de arquitectura
+    - baño en el bloque de arquitectura
+
+
+
+
+- synonym: '21'
+  examples: |
+    - salón 21
+- synonym: '23'
+  examples: |
+    - salón 23
+- synonym: '24'
+  examples: |
+    - salón 24
+    - Salón 24
+- synonym: '15'
+  examples: |
+    - salón 15
+- synonym: '14'
+  examples: |
+    - salón 14
+- synonym: '13'
+  examples: |
+    - salón 13
+- synonym: '12'
+  examples: |
+    - salón 12
+- synonym: '11'
+  examples: |
+    - salón 11
+    - Salón 11
+    - Bloque de arquitectura
+- synonym: '208'
+  examples: |
+    - salón 208
+- synonym: '206'
+  examples: |
+    - salón 206
+- synonym: '207'
+  examples: |
+    - salón 207
+- synonym: '205'
+  examples: |
+    - salón 205
+- synonym: '203'
+  examples: |
+    - salón 203
+- synonym: '202'
+  examples: |
+    - salón 202
+- synonym: '201'
+  examples: |
+    - salón 201
+- synonym: '301'
+  examples: |
+    - salón 301
+- synonym: '303'
+  examples: |
+    - salón 303
+- synonym: '302'
+  examples: |
+    - salón 302
+- synonym: '304'
+  examples: |
+    - salón 304
+- synonym: '104'
+  examples: |
+    - salón 104
+- synonym: '105'
+  examples: |
+    - salón 105
+- synonym: BAÑOS CEP
+  examples: |
+    - baños del cep
+    - baños en el cep
+    - Baños del cep
+    - Baños en el cep
+    - CEP
+    - cep
+    - Cep
+    - el CEP
+    - el cep
+    - el Cep
+    - El CEP
+    - El cep
+    - El Cep
+    - baño del cep
+    - baño de psicologia
+    - baños cerca de psicologia
+    - baños de pśicología
+    - baños cerca de psicología
+    - baños cep
+    - Baño del cep
+    - Baño de psicologia
+    - Baños cerca de psicologia
+    - Baños de pśicología
+    - Baños cerca de psicología
+    - Baños cep
+
+- synonym: OFICINA APOYO FINANCIERO
+  examples: |
+    - apoyo financiero
+- synonym: OFICINA COMUNICACION INSTITUCIONAL
+  examples: |
+    - comunicacion institucional
+- synonym: AUDITORIO
+  examples: |
+    - auditorio
+    - Auditorio
+    - Salon de eventos
+- synonym: BIBLIOTECA
+  examples: |
+    - biblioteca
+    - Biblioteca
+    - lugar para leer
+- synonym: GIMNASIO
+  examples: |
+    - gimnasio
+    - Gimnasio
+    - GYM
+    - gym
+- synonym: BAÑOS BIENESTAR UNIVERSITARIO
+  examples: |
+    - baños del gym
+    - baños del gimnasio
+    - baños del ping pong
+    - baño del bienestar universitario
+    - baño del bien estar
+    - Baños del bien estar
+    - baño del gym
+    - baño del gimnasio
+    - Baños de bienestar
+    - baños de bienestar
+    - baño de bienestar
+    - baño bienestar
+    - baño del bienestar
+    - Baños del gym
+    - Baños del gimnasio
+    - Baños del ping pong
+    - Baño del bienestar universitario
+    - Baño del bien estar
+    - baños del bien estar
+    - Baño del gym
+    - Baño del gimnasio
+    - Baño de bienestar
+    - Baño bienestar
+    - Baño del bienestar
+    - Baños del bienestar
+    - baños del bienestar
+    - baños en el bienestar
+    - Baños en el bienestar
+    - Baños del pingpong
+    - baños del pingpong
+    - baño en el gym
+    - Baño en el gym
+
+
+
+
+
+
+
+
+
+- synonym: CAFETERIA CEP
+  examples: |
+    - cafeteria cep
+    - cafetería cep
+    - Cafeteria cep
+    - Cafetería del cep
+    - cafeteria de psicologia
+    - Cafeteria de psicologia
+    - cafetería del CEP
+    - Cafetería del CEP
+    - Cafeteria del edificio de psicología
+    - cafeteria del edificio de psicología
+    - tienda psicología
+    - Tienda psicología
+    - comedor edificio de psicologia
+    - Comedor edificio de psicologia
+- synonym: CAFETERIA BIENESTAR UNIVERSITARIO
+  examples: |
+    - cafeteria del gimnasio
+    - cafeteria de bienestar universitario
+    - Cafeteria de bienestar universitario
+    - Cafetería de bienestar universitario
+    - cafetería de bienestar universitario
+    - cafeteria gym
+    - Cafeteria del gym
+    - Cafetería del gym
+    - Cafeteria gimnasio
+    - Cafetería gimnasio
+    - cafeteria gimnasio
+    - cafeteria del ping pong
+    - cafetería bienestar
+    - Cafetería bienestar
+    - Cafeteria bienestar
+    - cafeteria bienestar
+    - cafetería del bienestar
+    - cafetería del bien estar
+    - Cafetería del bien estar
+    - cafetería en el bienestar
+    - Cafetería en el bienestar
+    - cafeteria en el bienestar
+    - Cafeteria en el bienestar
+
+
+- synonym: SALON
+  examples: |
+    - salon
+    - Salones
+    - salones
+    - salón
+- synonym: LABORATORIO
+  examples: |
+    - laboratorio
+    - Laboratorios
+    - laboratorios
+    - Lab
+    - lab
+    - laboratorip
+    - Lab electronica
+    - lab electronica
+    - Labs
+    - labs
+    - Laboratorios electro
+    - laboratorios electro
+    - Laboratorios de electro
+    - laboratorios de electro
+    - Laboratorios de ingenieria electronica
+    - Laboratorios de ingeniería electrónica
+    - Laboratorios de ingeniería electrónica
+    - laboratorios de ingenieria electronica
+    - Laboratorios de ingeniería electronica
+    - Laboratorios de ingenieria electrónica
+    - Laboratorios electronica
+    - laboratorios electronica
+    - Labs eletronica
+    - labs eletronica
+    - Labs eletrónica
+    - labs eletrónica
+    - Labs de eletronica
+    - labs de eletronica
+    - Labs de eletrónica
+    - labs de eletrónica
+    - laboratirios
+- synonym: BAÑO
+  examples: |
+    - baños
+    - Baños
+    - baño
+    - Baño
+    - baño de niñas en los laboratorios
+    - baños de niños
+    - baños de niñas
+    - Baño de niñas en los laboratorios
+    - Baños de niños
+    - Baños de niñas
+    - Baño de hombres
+    - Baño de damas
+    - baño de niñas
+    - baño de hombres
+    - baño de damas
+    - Baño de niñas
+- synonym: CAFETERIA
+  examples: |
+    - cafeterias
+    - cafetería
+    - Cafetería
+    - Cafeteria
+    - Cafeterias
+    - cafeteria
+    - Cafeterías
+    - Comedores
+    - comedores
+    - tiendas
+    - Tiendas
+- synonym: OFICINA
+  examples: |
+    - Oficinas
+    - oficinas
+    - oficina
+    - Oficina
+- synonym: ENFERMERÍA
+  examples: |
+    - enfermería
+    - enfermeria
+    - enfermera
+    - Enfermeria
+    - Enfermería
+    - primeros auxilios
+    - Primeros auxilios
+- synonym: Luisa Fernanda Gallo S\u00e1nchez
+  examples: |
+    - Luisa Fernanda Gallo
+    - Luisa Fernanda
+    - Luisa Sanchez
+    - luisa fernanda gallo
+    - luisa fernanda
+    - luisa sanchez
+    - luisa gallo
+    - Luisa Gallo
+    - luisa
+    - Luisa
+    - Ingeniera Luisa
+    - Ingeniera luisa
+    - Ingeniera gallo
+    - Ingeniera Gallo
+    - ingeniera Luisa
+    - ing Luisa
+    - ing luisa
+    - Ing Luisa
+    - Ing luisa
+- synonym: Oscar Barrero Mendoza
+  examples: |
+    - barrero
+    - oscar barrero
+    - oscar
+    - Oscar
+    - Ingeniero Barrero
+    - Ingeniero Oscar
+    - Ingeniero oscar
+    - Ingeniero barrero
+    - ingeniero Barrero
+    - ing barrero
+    - ing Barrero
+    - Ing barrero
+    - Ing Barrero
+- synonym: Harold Fabi\u00e1n Murcia Moreno
+  examples: |
+    - harold
+    - harold murcia
+    - harold fabian murcia
+    - Harold Fabian Murcia
+    - Harold
+    - Harold Murcia
+    - Ingeniero Murcia
+    - Ingeniero Harold
+    - Ingeniero harold
+    - Ingeniero murcia
+    - ingeniero harold
+    - ing Harold
+    - ing harold
+    - Ing Harold
+    - Ing harold
+- synonym: Carlos Alberto Sandoval C\u00e1rdenas
+  examples: |
+    - sandoval
+    - carlos sandoval
+- synonym: Oswaldo L\u00f3pez Santos
+  examples: |
+    - oswaldo
+    - oswaldo lopez
+    - oswaldo lopez santos
+- synonym: William Alexander Londo\u00f1o Mar\u00edn
+  examples: |
+    - william
+    - william londoño
+    - William Londoño
+    - Willian Londoño
+    - ing william
+    - ING william
+    - ing William
+    - ING William
+    - ingeniero William
+    - Ingeniero william
+    - Ingeniero William
+    - ingeniero william
+- synonym: Jos\u00e9 Armando Fern\u00e1ndez Gallego
+  examples: |
+    - jose
+    - jose armando
+    - jose armando fernandez
+    - josé Armando
+    - José Armando
+    - Jose Armando
+    - josé armando
+    - ingeniero fernandez
+    - Ingeniero Fernandez
+    - ING Fernandez
+    - ing fernandez
+
+- synonym: Rodolfo Jos\u00e9 Guti\u00e9rrez Gonzales
+  examples: |
+    - fito
+    - rodolfo
+    - rodolfo jose gutierrez
+    - Rodolfo
+    - rofolfo
+- synonym: Diego Valencia
+  examples: |
+    - Diego valencia
+    - diego
+    - diego valencia
+    - valencia
+    - Diego
+    - Valencia
+
+- synonym: LABORATORIO DE ELECTROMEDICINA (L4)
+  examples: |
+    - Laboratorio de electromedicina
+    - lab 4
+    - l4
+- synonym: UNIVERSIDAD DE IBAGUE
+  examples: |
+    - universidad
+    - unibague
+    - Universidad de ibague
+    - universidad de ibague
+    - universidad de ibagúe
+    - Universidad de ibagúe
+    - Universidad
+    - Unibague
+    - unibagúe
+    - Unibagúe
+    - u
+    - U
+- regex: codigo_estudiantil
+  examples: |
+    - [0-9]{10}

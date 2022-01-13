@@ -1,0 +1,223 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+intents:
+- saludo:
+    use_entities: true
+- start:
+    use_entities: true
+- solicidar_codigo:
+    use_entities: true
+- despedida:
+    use_entities: true
+- afirmar:
+    use_entities: true
+- denegar:
+    use_entities: true
+- sent_pregunta:
+    use_entities: true
+- desafio:
+    use_entities: true
+- presentacion:
+    use_entities: true
+- servicio_ayuda:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- grosero_respuesta:
+    use_entities: true
+- servicio_ubicacion:
+    use_entities: true
+- servicio_calendario:
+    use_entities: true
+- servicio_pensum:
+    use_entities: true
+- servicio_casillero:
+    use_entities: true
+- servicio_horario_profesor:
+    use_entities: true
+- actividades_extra:
+    use_entities: true
+- horario_laboratorio:
+    use_entities: true
+- reglamento_estudiantil:
+    use_entities: true
+
+
+# comienzo
+- valor_derechos_grado:
+    use_entities: true
+- valor_semestre_electronica:
+    use_entities: true
+- valor_derecho_inscripcion:
+    use_entities: true
+- creditos_electivas_profesionales:
+    use_entities: true
+- creditos_matricula_de_prueba:
+    use_entities: true
+- costo_certificado_de_estudio:
+    use_entities: true
+- pago_certificado_de_estudio:
+    use_entities: true
+- contenido_programatico:
+    use_entities: true
+- valor_supletorio:
+    use_entities: true
+- valor_validacion:
+    use_entities: true
+- valor_carnet_estudiantil:
+    use_entities: true
+- cancelar_materia:
+    use_entities: true
+- modalidades_de_trabajo_de_grado:
+    use_entities: true
+- requisitos_graduacion:
+    use_entities: true
+- queja_docente:
+    use_entities: true
+- buen_promedio:
+    use_entities: true
+- segundo_calificador:
+    use_entities: true
+- incapacidad_entregas:
+    use_entities: true
+- materias_intersemestral:
+    use_entities: true
+- escuela_verano:
+    use_entities: true
+- intercambios:
+    use_entities: true
+- convenios:
+    use_entities: true
+- creditos:
+    use_entities: true
+- proceso_trabajo_grado:
+    use_entities: true
+- doble_titulacion:
+    use_entities: true
+- daño_propiedad_unibague:
+    use_entities: true
+- plagio_sancion:
+    use_entities: true
+- creditos_intersemestral:
+    use_entities: true
+- costos_creditos:
+    use_entities: true
+- requisitos_monitor:
+    use_entities: true
+- becas_descuentos:
+    use_entities: true
+- funcion_monitores:
+    use_entities: true
+- requisitos_locker:
+    use_entities: true
+- capacidad_laboratorios:
+    use_entities: true
+- proceso_citasPsico:
+    use_entities: true
+- formato_proyecto_de_grado:
+    use_entities: true
+- profesores_de_electronica:
+    use_entities: true
+- sitio_web_electronica:
+    use_entities: true
+- METIE:
+    use_entities: true
+- semilleros:
+    use_entities: true
+- contacto_programa:
+    use_entities: true
+- Area_constancia_de_estudio:
+    use_entities: true
+- encargado_labs_electronica:
+    use_entities: true
+- sugerencias_universidad:
+    use_entities: true
+- horarios_universidad:
+    use_entities: true
+- apartar_salon:
+    use_entities: true
+- buses_universidad:
+    use_entities: true
+- alejandria:
+    use_entities: true
+- apoyoFinanciero:
+    use_entities: true
+- centro_Idiomas:
+    use_entities: true
+# fin
+
+
+entities:
+- Ubicacion
+- Profesor
+- codigo_estudiantil
+- Laboratorio
+slots: {}
+responses:
+  utter_respuesta_gracias:
+  - text: Un placer ayudar
+  utter_fallback:
+  - text: No comprendo, escribe más clara la pregunta. 🤔
+  utter_saludo:
+  - text: ¡Hola! ¿En qué te puedo ayudar?
+  - text: ¡Hola! 👋
+  - text: Buenas!! ¿En qué te ayudo hoy?
+  - text: ¡Holaaa!! que gusto verte de nuevo.
+  utter_despedida:
+  - text: Espero haber sido de ayuda.
+  - text: Adiós y si necesitas algo, no dudes en escribirme.
+  - text: Adios 👋
+  utter_afirmar:
+  - text: Bueno
+  utter_denegar:
+  - text: Ahh caray
+  utter_sent_pregunta:
+  - text: Gracias por preguntar, todo muy bien. ¿En qué te puedo ayudar?
+  - text: Muy entusiasmada en poder ayudarte, ¿Cuál es tu pregunta?
+  utter_presentacion:
+  - text: Mi nombre es ISA (sistema de inteligencia artificial), fui creada como el proyecto de grado por los estudiantes de ingeniería electrónica Richard Blacker y Sebastian Barragan.
+  utter_desafio:
+  - text: Creo que no fui creada para responder esas preguntas. Jaja
+  - text: Cambiemos de tema... ¿En qué te puedo ayudar?
+  utter_grosero:
+  - text: no seas grosero.
+  - text: oye, no me hables así por favor.
+  utter_servicio_ayuda:
+  - text: |-
+      ¿En qué te puedo ayudar?
+      Tengo conocimiento de:
+       - Ubicaciones de: Salones, laboratorios, oficinas, baños y cafeterias.📍
+       - Horarios de atencion de los docentes y horarios libres de los labs.🔬
+       - Información de la universidad como precios, calendarios, pénsum y preguntas de normatividad.📜
+  utter_start:
+  - text: Hola mi nombre es ISA, soy un prototipo de inteligencia artificial creado para ayudarte en la búsqueda de información de la Universidad de Ibagué enfocado en la carrera de ingeniería electrónica.
+actions:
+- action_id
+- action_codigo
+- action_imagen_calendario
+- action_laboratorio_extractor
+- action_entity_extractor
+- action_profesor_extractor
+- action_imagen_casillero
+- action_imagen_pensum
+- action_imagen_actividades_extra
+- action_reglamento_estudiantil
+- action_funciones_isa
+- action_excel_normas
+- action_excel_poca
+- utter_saludo
+- utter_fallback
+- utter_despedida
+- utter_afirmar
+- utter_denegar
+- utter_sent_pregunta
+- utter_desafio
+forms: {}
+e2e_actions: []

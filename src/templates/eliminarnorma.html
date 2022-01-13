@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+    Eliminar
+{% endblock %}
+
+{% block content %}
+<!--aqui comienza mi codigo-->
+
+{% if user.is_authenticated %}
+
+<h1>Eliminando a {{ normatividad.intent }}</h1>
+</br></br>
+
+<div class="form-group">
+  <form method=POST>
+    {% csrf_token %}
+
+
+    <ul>
+      <h3>Norma</h3>
+      <li> <h5><strong> Intent :</strong> {{ normatividad.intent }}</h5></li>
+      <li> <h5><strong> Pregunta :</strong> {{ normatividad.pregunta }}</h5></li>
+      <li> <h5><strong> Respuesta :</strong> {{ normatividad.respuesta }}</h5></li>
+      <li> <h5><strong> Complemento :</strong> {{ normatividad.complemento }}</h5></li>
+
+
+    </ul>
+
+    </br>
+    <strong>Estas seguro que quieres eliminar a {{ normatividad.intent }}?</strong><br/>
+    </br>
+    <button class= "btn btn-danger">Eliminar</button>
+</div>
+
+{% else %}
+
+<h3>No tienes autoridad de estar en esta pagina</h3>
+
+
+{% endif %}
+
+<!--aqui Termina mi codigo-->
+{%  endblock %}

@@ -1,0 +1,39 @@
+2021-10-15 13:16:36,117 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-10-15 13:16:36,123 [INFO ]  Loading model models/20211014-012554.tar.gz...
+2021-10-15 13:16:36,835 [INFO ]  Loading model models/20211014-012554.tar.gz...
+2021-10-15 13:16:47,984 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2021-10-15 13:16:56,502 [INFO ]  Rasa server is up and running.
+2021-10-15 13:17:39,271 [ERROR]  Exception when trying to handle message.None is not in list
+2021-10-15 13:17:39,543 [ERROR]  Exception occurred while handling uri: 'http://d027-2800-484-2486-1b5e-a4d-ec82-3eb8-e5f1.ngrok.io/webhooks/telegram/webhook'
+Traceback (most recent call last):
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/sanic/app.py", line 931, in handle_request
+    response = await response
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/channels/telegram.py", line 259, in message
+    await on_new_message(
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/channels/channel.py", line 89, in handler
+    await app.agent.handle_message(message)
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/agent.py", line 577, in handle_message
+    return await processor.handle_message(message)
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/processor.py", line 108, in handle_message
+    await self._predict_and_execute_next_action(message.output_channel, tracker)
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/processor.py", line 657, in _predict_and_execute_next_action
+    action, prediction = self.predict_next_action(tracker)
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/processor.py", line 379, in predict_next_action
+    prediction = self._get_next_action_probabilities(tracker)
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/processor.py", line 921, in _get_next_action_probabilities
+    prediction = self.policy_ensemble.probabilities_using_best_policy(
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/policies/ensemble.py", line 817, in probabilities_using_best_policy
+    winning_prediction = self._best_policy_prediction(tracker, domain, interpreter)
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/policies/ensemble.py", line 694, in _best_policy_prediction
+    predictions = {
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/policies/ensemble.py", line 695, in <dictcomp>
+    f"policy_{i}_{type(p).__name__}": self._get_prediction(
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/policies/ensemble.py", line 729, in _get_prediction
+    prediction = policy.predict_action_probabilities(
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/policies/unexpected_intent_policy.py", line 544, in predict_action_probabilities
+    is_unlikely_intent = self._check_unlikely_intent(
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/policies/unexpected_intent_policy.py", line 639, in _check_unlikely_intent
+    if not self._should_check_for_intent(query_intent, domain):
+  File "/home/richard/entornosvirtuales/paginaisa/lib/python3.8/site-packages/rasa/core/policies/unexpected_intent_policy.py", line 601, in _should_check_for_intent
+    if domain.intents.index(intent) not in self.label_thresholds:
+ValueError: None is not in list

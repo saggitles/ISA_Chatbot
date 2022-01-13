@@ -1,0 +1,273 @@
+version: "2.0"
+stories:
+
+- story: Saludo
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+- story: Start
+  steps:
+  - intent: start
+  - action: utter_start
+  - action: action_id
+  - intent: solicidar_codigo
+  - action: action_codigo
+  - action: utter_servicio_ayuda
+  - action: action_funciones_isa
+
+- story: No entiendo
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+- story: grosero
+  steps:
+  - intent: grosero_respuesta
+  - action: utter_grosero
+- story: presentacion_respuesta
+  steps:
+  - intent: presentacion
+  - action: utter_presentacion
+- story: Servicio Ayuda
+  steps:
+  - intent: servicio_ayuda
+  - action: utter_servicio_ayuda
+  - action: action_funciones_isa
+- story: Servicio Ubicacion
+  steps:
+  - intent: servicio_ubicacion
+  - action: action_entity_extractor
+- story: calendario
+  steps:
+  - intent: servicio_calendario
+  - action: action_imagen_calendario
+- story: Servicio Horario profe
+  steps:
+  - intent: servicio_horario_profesor
+  - action: action_profesor_extractor
+- story: Servicio Horario Laboratorios
+  steps:
+  - intent: horario_laboratorio
+  - action: action_laboratorio_extractor
+- story: Servicio Pensum
+  steps:
+  - intent: servicio_pensum
+  - action: action_imagen_pensum
+- story: Servicio Casillero
+  steps:
+  - intent: servicio_casillero
+  - action: action_imagen_casillero
+- story: actividades_extracurriculares
+  steps:
+  - intent: actividades_extra
+  - action: action_imagen_actividades_extra
+- story: reglamento estudiantil
+  steps:
+  - intent: reglamento_estudiantil
+  - action: action_reglamento_estudiantil
+
+
+
+
+
+# comienzo historias excel
+- story: valor_derechos_gradostory
+  steps:
+  - intent: valor_derechos_grado
+  - action: action_excel_normas
+- story: valor_semestre_electronicastory
+  steps:
+  - intent: valor_semestre_electronica
+  - action: action_excel_normas
+- story: valor_derecho_inscripcionstory
+  steps:
+  - intent: valor_derecho_inscripcion
+  - action: action_excel_normas
+- story: creditos_electivas_profesionalesstory
+  steps:
+  - intent: creditos_electivas_profesionales
+  - action: action_excel_normas
+- story: creditos_matricula_de_pruebastory
+  steps:
+  - intent: creditos_matricula_de_prueba
+  - action: action_excel_normas
+- story: costo_certificado_de_estudiostory
+  steps:
+  - intent: costo_certificado_de_estudio
+  - action: action_excel_normas
+- story: pago_certificado_de_estudiostory
+  steps:
+  - intent: pago_certificado_de_estudio
+  - action: action_excel_normas
+- story: contenido_programaticostory
+  steps:
+  - intent: contenido_programatico
+  - action: action_excel_normas
+- story: valor_supletoriostory
+  steps:
+  - intent: valor_supletorio
+  - action: action_excel_normas
+- story: valor_validacionstory
+  steps:
+  - intent: valor_validacion
+  - action: action_excel_normas
+- story: valor_carnet_estudiantilstory
+  steps:
+  - intent: valor_carnet_estudiantil
+  - action: action_excel_normas
+- story: cancelar_materiastory
+  steps:
+  - intent: cancelar_materia
+  - action: action_excel_normas
+- story: modalidades_de_trabajo_de_gradostory
+  steps:
+  - intent: modalidades_de_trabajo_de_grado
+  - action: action_excel_normas
+- story: requisitos_graduacionstory
+  steps:
+  - intent: requisitos_graduacion
+  - action: action_excel_normas
+- story: queja_docentestory
+  steps:
+  - intent: queja_docente
+  - action: action_excel_normas
+- story: buen_promediostory
+  steps:
+  - intent: buen_promedio
+  - action: action_excel_normas
+- story: segundo_calificadorstory
+  steps:
+  - intent: segundo_calificador
+  - action: action_excel_normas
+- story: incapacidad_entregasstory
+  steps:
+  - intent: incapacidad_entregas
+  - action: action_excel_normas
+- story: materias_intersemestralstory
+  steps:
+  - intent: materias_intersemestral
+  - action: action_excel_normas
+- story: escuela_veranostory
+  steps:
+  - intent: escuela_verano
+  - action: action_excel_normas
+- story: intercambiosstory
+  steps:
+  - intent: intercambios
+  - action: action_excel_normas
+- story: conveniosstory
+  steps:
+  - intent: convenios
+  - action: action_excel_normas
+- story: creditosstory
+  steps:
+  - intent: creditos
+  - action: action_excel_normas
+- story: proceso_trabajo_gradostory
+  steps:
+  - intent: proceso_trabajo_grado
+  - action: action_excel_normas
+- story: doble_titulacionstory
+  steps:
+  - intent: doble_titulacion
+  - action: action_excel_normas
+- story: daño_propiedad_unibaguestory
+  steps:
+  - intent: daño_propiedad_unibague
+  - action: action_excel_normas
+- story: plagio_sancionstory
+  steps:
+  - intent: plagio_sancion
+  - action: action_excel_normas
+- story: creditos_intersemestralstory
+  steps:
+  - intent: creditos_intersemestral
+  - action: action_excel_normas
+- story: costos_creditosstory
+  steps:
+  - intent: costos_creditos
+  - action: action_excel_normas
+- story: requisitos_monitorstory
+  steps:
+  - intent: requisitos_monitor
+  - action: action_excel_normas
+- story: becas_descuentosstory
+  steps:
+  - intent: becas_descuentos
+  - action: action_excel_normas
+- story: funcion_monitoresstory
+  steps:
+  - intent: funcion_monitores
+  - action: action_excel_normas
+- story: requisitos_lockerstory
+  steps:
+  - intent: requisitos_locker
+  - action: action_excel_normas
+- story: capacidad_laboratoriosstory
+  steps:
+  - intent: capacidad_laboratorios
+  - action: action_excel_normas
+- story: proceso_citasPsicostory
+  steps:
+  - intent: proceso_citasPsico
+  - action: action_excel_normas
+- story: formato_proyecto_de_gradostory
+  steps:
+  - intent: formato_proyecto_de_grado
+  - action: action_excel_normas
+- story: profesores_de_electronicastory
+  steps:
+  - intent: profesores_de_electronica
+  - action: action_excel_normas
+- story: sitio_web_electronicastory
+  steps:
+  - intent: sitio_web_electronica
+  - action: action_excel_normas
+- story: METIEstory
+  steps:
+  - intent: METIE
+  - action: action_excel_normas
+- story: semillerosstory
+  steps:
+  - intent: semilleros
+  - action: action_excel_normas
+- story: contacto_programastory
+  steps:
+  - intent: contacto_programa
+  - action: action_excel_normas
+- story: Area_constancia_de_estudiostory
+  steps:
+  - intent: Area_constancia_de_estudio
+  - action: action_excel_normas
+- story: encargado_labs_electronicastory
+  steps:
+  - intent: encargado_labs_electronica
+  - action: action_excel_normas
+- story: sugerencias_universidadstory
+  steps:
+  - intent: sugerencias_universidad
+  - action: action_excel_normas
+- story: horarios_universidadstory
+  steps:
+  - intent: horarios_universidad
+  - action: action_excel_normas
+- story: apartar_salonstory
+  steps:
+  - intent: apartar_salon
+  - action: action_excel_normas
+- story: buses_universidadstory
+  steps:
+  - intent: buses_universidad
+  - action: action_excel_normas
+- story: alejandriastory
+  steps:
+  - intent: alejandria
+  - action: action_excel_normas
+- story: apoyoFinancierostory
+  steps:
+  - intent: apoyoFinanciero
+  - action: action_excel_normas
+- story: centro_Idiomasstory
+  steps:
+  - intent: centro_Idiomas
+  - action: action_excel_normas
+# fin historias excel

@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+    Horarios Profesores
+{% endblock %}
+
+{% block content %}
+<!--aqui comienza mi codigo-->
+
+
+<form action= "" method=POST>
+  {% csrf_token %}
+
+  <h1>Horario de Asesoria de los Docentes</h1>
+  <br/>
+
+
+
+
+
+  <br/><br/>
+  <div class="container">
+    <div class="row">
+      <div class="col-3" style="background-color:powderblue;">
+        <h6><b>Nombre</b></h6>
+      </div>
+      <div class="col-1" style="background-color:#EF7E66;">
+          <h6><b>Lunes</b></h6>
+      </div>
+      <div class="col-1" style="background-color:powderblue;">
+          <h6><b>Martes</b></h6>
+      </div>
+      <div class="col-1" style="background-color:#EF7E66;">
+          <h6><b>Miercoles</b></h6>
+      </div>
+      <div class="col-1" style="background-color:powderblue;">
+          <h6><b>Jueves</b></h6>
+      </div>
+      <div class="col-1" style="background-color:#EF7E66;">
+          <h6><b>Viernes</b></h6>
+      </div>
+      <div class="col-1" style="background-color:powderblue;">
+          <h6><b>Sabado</b></h6>
+      </div>
+      <div class="col-1" style="background-color:#EF7E66;">
+          <h6><b>Domingo</b></h6>
+      </div>
+      {% if user.is_authenticated %}
+      <div class="col-1">
+
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <br/>
+  {% for horario in profesoreshorariosfinal %}
+  <div class="container">
+    <div class="row">
+      <div class="col-3" style="background-color:powderblue;">
+        {{ horario.nombre }}
+      </div>
+      <div class="col-1" style="background-color:#EF7E66;">
+        {{ horario.lunes }}
+      </div>
+      <div class="col-1" style="background-color:powderblue;">
+        {{ horario.martes }}
+      </div>
+      <div class="col-1" style="background-color:#EF7E66;">
+        {{ horario.miercoles }}
+      </div>
+      <div class="col-1" style="background-color:powderblue;">
+        {{ horario.jueves }}
+      </div>
+      <div class="col-1" style="background-color:#EF7E66;">
+        {{ horario.viernes }}
+      </div>
+      <div class="col-1" style="background-color:powderblue;">
+        {{ horario.sabado }}
+      </div>
+      <div class="col-1" style="background-color:#EF7E66;">
+        {{ horario.domingo }}
+      </div>
+      {% if user.is_authenticated %}
+      <div class="col-1">
+        <small> <a href="{% url 'eliminarhorarioprof' horario.pk %}">(Eliminar)</a> </small>
+      </div>
+      {% endif %}
+    </div>
+    </div>
+
+      <br/>
+
+  {% endfor %}
+
+
+{% if user.is_authenticated %}
+<br/><br/>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      Nombre
+    </div>
+    <div class="col-1">
+      Lunes
+    </div>
+    <div class="col-1">
+      Martes
+    </div>
+    <div class="col-1">
+      Miercoles
+    </div>
+    <div class="col-1">
+      Jueves
+    </div>
+    <div class="col-1">
+      Viernes
+    </div>
+    <div class="col-1">
+      Sabado
+    </div>
+    <div class="col-1">
+      Domingo
+    </div>
+    <div class="col-1">
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-3">
+      {{form.nombre}}
+    </div>
+    <div class="col-1">
+      {{form.lunes}}
+    </div>
+    <div class="col-1">
+      {{form.martes}}
+    </div>
+    <div class="col-1">
+      {{form.miercoles}}
+    </div>
+    <div class="col-1">
+      {{form.jueves}}
+    </div>
+    <div class="col-1">
+      {{form.viernes}}
+    </div>
+    <div class="col-1">
+      {{form.sabado}}
+    </div>
+    <div class="col-1">
+      {{form.domingo}}
+    </div>
+    <div class="col-1"></div>
+
+
+  </div>
+
+  <br><br>
+
+  {% endif %}
+
+  <div class="row">
+    <div class="col-1">
+      <input type="submit" value="Guardar" class="btn btn-success">
+      </div>
+      </form>
+    <div class="col-1">
+      <form action= "importar/" method='GET'>
+      <button type="submit" class="btn btn-primary">Importar</button>
+      </form>
+    </div>
+   <div class="col-3">
+       <a href="/media/Horario Profesores.xlsx" download>
+         <button type="button" class="btn btn-secondary">Descargar documento</button>
+       </a>
+
+
+    </div>
+
+
+    </div>
+
+
+  <br><br>
+
+
+  <br><br>
+
+
+  <br><br>
+
+  {% if submitted == 1%}
+    <div class="alert alert-success" role="alert">
+      Se ha guardado exitosamente.
+    </div>
+
+
+  {% elif submitted == 2%}
+    <div class="alert alert-danger" role="alert">
+      Hay algun error, corrigelo y vuelve a intentar.
+    </div>
+
+
+  {% endif %}
+</div>
+
+
+
+<!--aqui Termina mi codigo-->
+{%  endblock %}

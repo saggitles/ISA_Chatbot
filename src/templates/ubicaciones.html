@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+    Horarios
+{% endblock %}
+
+{% block content %}
+<!--aqui comienza mi codigo-->
+
+
+<form action= "" method=POST>
+  {% csrf_token %}
+
+  <h1>Ubicaciones</h1>
+  <br/>
+
+
+
+
+
+  <br/><br/>
+  <div class="container">
+    <div class="row">
+      <div class="col-5" style="background-color:powderblue;">
+        <h3>Nombre</h3>
+      </div>
+      <div class="col-3" style="background-color:#EF7E66;">
+          <h3>Latitud</h3>
+      </div>
+      <div class="col-3" style="background-color:powderblue;">
+          <h3>Longitud</h3>
+      </div>
+      {% if user.is_authenticated %}
+      <div class="col-1">
+
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+  <br/>
+  {% for ubicacion in ubicacionesfinal %}
+  <div class="container">
+    <div class="row">
+      <div class="col-5" style="background-color:powderblue;">
+        {{ ubicacion.nombre }}
+      </div>
+      <div class="col-3" style="background-color:#EF7E66;">
+        {{ ubicacion.latitud }}
+      </div>
+      <div class="col-3" style="background-color:powderblue;">
+        {{ ubicacion.longitud }}
+      </div>
+      {% if user.is_authenticated %}
+      <div class="col-1">
+        <small> <a href="{% url 'eliminarubicacion' ubicacion.pk %}">(Eliminar)</a> </small>
+      </div>
+      {% endif %}
+    </div>
+    </div>
+
+      <br/>
+
+  {% endfor %}
+
+  <br/><br/>
+
+
+
+{% if user.is_authenticated %}
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      Nombre
+    </div>
+    <div class="col-3">
+      Latitud
+    </div>
+    <div class="col-3">
+      Longitud
+    </div>
+    <div class="col-1">
+
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-5">
+      {{form.nombre}}
+    </div>
+    <div class="col-3">
+      {{form.latitud}}
+    </div>
+    <div class="col-3">
+      {{form.longitud}}
+    </div>
+    <div class="col-1">
+
+    </div>
+
+  </div>
+  <br><br>
+
+
+  {% endif %}
+
+
+  <div class="row">
+    <div class="col-1">
+      <input type="submit" value="Guardar" class="btn btn-success">
+      </div>
+      </form>
+    <div class="col-1">
+      <form action= "importar/" method='GET'>
+      <button type="submit" class="btn btn-primary">Importar</button>
+      </form>
+    </div>
+   <div class="col-3">
+       <a href="/media/Ubicaciones.xlsx" download>
+         <button type="button" class="btn btn-secondary">Descargar documento</button>
+       </a>
+
+
+    </div>
+  
+    </div>
+
+
+  <br><br>
+  {% if submitted == 1%}
+    <div class="alert alert-success" role="alert">
+      Se ha guardado exitosamente.
+    </div>
+
+
+  {% elif submitted == 2%}
+    <div class="alert alert-danger" role="alert">
+      Hay algun error, corrigelo y vuelve a intentar.
+    </div>
+
+
+  {% endif %}
+</div>
+
+
+<!--aqui Termina mi codigo-->
+{%  endblock %}

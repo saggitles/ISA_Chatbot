@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+    Eliminar
+{% endblock %}
+
+{% block content %}
+<!--aqui comienza mi codigo-->
+
+{% if user.is_authenticated %}
+
+<h1>Eliminando a {{ ubicaciones.nombre }}</h1>
+</br></br>
+
+<div class="form-group">
+  <form method=POST>
+    {% csrf_token %}
+
+
+    <ul>
+      <h3>Ubicacion</h3>
+      <li> <h5><strong> Latitud :</strong> {{ ubicaciones.latitud }}</h5></li>
+      <li> <h5><strong> Longitud :</strong> {{ ubicaciones.longitud }}</h5></li>
+
+
+    </ul>
+
+    </br>
+    <strong>Estas seguro que quieres eliminar a {{ ubicaciones.nombre }}?</strong><br/>
+    </br>
+    <button class= "btn btn-danger">Eliminar</button>
+</div>
+
+{% else %}
+
+<h3>No tienes autoridad de estar en esta pagina</h3>
+
+
+{% endif %}
+<!--aqui Termina mi codigo-->
+{%  endblock %}

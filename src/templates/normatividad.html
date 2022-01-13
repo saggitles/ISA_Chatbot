@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+    Normatividad
+{% endblock %}
+
+{% block content %}
+<!--aqui comienza mi codigo-->
+<form action= "" method=POST>
+  {% csrf_token %}
+  <h1>Preguntas y respuestas de normatividad</h1>
+  <br/><br/>
+  <div class="container">
+    <div class="row">
+      <div class="col-2" style="background-color:powderblue;">
+        <h4>Intent</h4>
+      </div>
+      <div class="col-2" style="background-color:#EF7E66;">
+          <h4>Pregunta</h4>
+      </div>
+      <div class="col-5" style="background-color:powderblue;">
+          <h4>Respuesta</h4>
+      </div>
+      <div class="col-2" style="background-color:#EF7E66;">
+          <h4>Complemento</h4>
+      </div>
+
+      {% if user.is_authenticated %}
+      <div class="col-1">
+
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <br/>
+
+
+
+  {% for norma in normasintentfinal %}
+  <div class="container">
+    <div class="row">
+      <div class="col-2" style="background-color:powderblue;">
+        {{ norma.intent }}
+      </div>
+      <div class="col-2" style="background-color:#EF7E66;">
+        {{ norma.pregunta }}
+      </div>
+      <div class="col-5" style="background-color:powderblue;">
+        {{ norma.respuesta }}
+      </div>
+      <div class="col-2" style="background-color:#EF7E66;">
+        {{ norma.complemento }}
+      </div>
+
+      {% if user.is_authenticated %}
+      <div class="col-1">
+        <small> <a href="{% url 'eliminarnorma' norma.pk %}">(Eliminar)</a> </small>
+      </div>
+      {% endif %}
+    </div>
+    </div>
+
+      <br/>
+
+  {% endfor %}
+
+
+  {% if user.is_authenticated %}
+  <br/><br/>
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      Intent
+    </div>
+    <div class="col-2">
+      Pregunta
+    </div>
+    <div class="col-5">
+      Respuesta
+    </div>
+    <div class="col-2">
+      Complemento
+    </div>
+
+
+    <div class="col-1">
+
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-2">
+      {{form.intent}}
+    </div>
+    <div class="col-2">
+      {{form.pregunta}}
+    </div>
+    <div class="col-5">
+      {{form.respuesta}}
+    </div>
+    <div class="col-2">
+      {{form.complemento}}
+    </div>
+  </div>
+  <br>
+
+    <div class="row">
+      <div class="col-12"><center>Ejemplos (minimo 3)</center></div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">{{form.ejemplo1}}</div>
+      <div class="col-6">{{form.ejemplo2}}</div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">{{form.ejemplo3}}</div>
+      <div class="col-6">{{form.ejemplo4}}</div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">{{form.ejemplo5}}</div>
+      <div class="col-6">{{form.ejemplo6}}</div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">{{form.ejemplo7}}</div>
+      <div class="col-6">{{form.ejemplo8}}</div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-6">{{form.ejemplo9}}</div>
+      <div class="col-6">{{form.ejemplo10}}</div>
+    </div>
+    <br>
+  <br><br>
+
+
+
+
+  {% endif %}
+
+
+  <div class="row">
+    <div class="col-1">
+      <input type="submit" value="Guardar" class="btn btn-success">
+      </div>
+      </form>
+    <div class="col-1">
+      <form action= "importar/" method='GET'>
+      <button type="submit" class="btn btn-primary">Importar</button>
+      </form>
+    </div>
+   <div class="col-3">
+       <a href="/media/Normatividad.xlsx" download>
+         <button type="button" class="btn btn-secondary">Descargar documento</button>
+       </a>
+    </div>
+
+  
+
+
+
+
+
+    </div>
+  <br><br>
+
+  {% if submitted == 1%}
+    <div class="alert alert-success" role="alert">
+      Se ha guardado exitosamente.
+    </div>
+
+
+  {% elif submitted == 2%}
+    <div class="alert alert-danger" role="alert">
+      Hay algun error, corrigelo y vuelve a intentar.
+    </div>
+
+
+  {% endif %}
+</div>
+
+
+
+<!--aqui Termina mi codigo-->
+{%  endblock %}

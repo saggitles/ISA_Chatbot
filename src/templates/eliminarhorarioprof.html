@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+
+{% block titulo %}
+    Eliminar
+{% endblock %}
+
+{% block content %}
+<!--aqui comienza mi codigo-->
+
+{% if user.is_authenticated %}
+
+<h1>Eliminando a {{ horariosprofesores.nombre }}</h1>
+</br></br>
+
+<div class="form-group">
+  <form method=POST>
+    {% csrf_token %}
+
+
+    <ul>
+      <h3>Horario</h3>
+      <li> <h5><strong> Lunes :</strong> {{ horariosprofesores.lunes }}</h5></li>
+      <li> <h5><strong> Martes :</strong> {{ horariosprofesores.martes }}</h5></li>
+      <li> <h5><strong> Miercoles :</strong> {{ horariosprofesores.miercoles }}</h5></li>
+      <li> <h5><strong> Jueves :</strong> {{ horariosprofesores.jueves }}</h5></li>
+      <li> <h5><strong> Viernes :</strong> {{ horariosprofesores.viernes }}</h5></li>
+      <li> <h5><strong> Sabado :</strong> {{ horariosprofesores.sabado }}</h5></li>
+      <li> <h5><strong> Domingo :</strong> {{ horariosprofesores.domingo }}</h5></li>
+
+    </ul>
+
+    </br>
+    <strong>Estas seguro que quieres eliminar a {{ horariosprofesores.nombre }}?</strong><br/>
+    </br>
+    <button class= "btn btn-danger">Eliminar</button>
+</div>
+
+{% else %}
+
+<h3>No tienes autoridad de estar en esta pagina</h3>
+
+
+{% endif %}
+
+<!--aqui Termina mi codigo-->
+{%  endblock %}
