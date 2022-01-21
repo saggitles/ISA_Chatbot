@@ -33,6 +33,7 @@ sudo apt install python3-pip
 pip3 install -U --user pip && pip3 install rasa
 python3 -m pip install Django
 pip install pandas
+pip install xlrd==1.2.0
 python3 -m pip install --user -U pyTelegramBotAPI
 pip install datetime
 pip install django-import_export
