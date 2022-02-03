@@ -1490,11 +1490,47 @@ nlu:
     - l2
     - Laboratorio industrial
     - lab 2
+    - lab L2
+    - laboratorio L2
+    - laboratorio Industial
+    - lab 2
+    - L2
+    - Laboratorio industial
+    - laboratorio l2
+    - Laboratorio l2
+    - Laboratorio Industial
+    - l2
+    - lab l2
+    - Laboratorio industial 2
+    - Lab2
+    - Laboratorio industial l2
+    - Lab industial 2
 - synonym: LABORATORIO ELECTROMEDICINA (L4)
   examples: |
     - Lab de electromedicina
     - Labpratorio de electromedicina
     - electromedicina
+    - laboratorio L4
+    - laboratorio electromedicina
+    - l4
+    - Laboratorio electromedicina
+    - lab 4
+    - lab L4
+    - laboratorio L4
+    - laboratorio Electromedicina
+    - lab 4
+    - L4
+    - Laboratorio electromedicina
+    - laboratorio l4
+    - Laboratorio l4
+    - Laboratorio de electromedicina
+    - l4
+    - lab l4
+    - Laboratorio electromedicina 4
+    - Lab4
+    - Laboratorio de electromedicina l4
+    - Lab electromedicina 4
+
 - synonym: LABORATORIO DE TELECOMUNICACIONES (L5)
   examples: |
     - laboratorio de telecomunicaciones
@@ -1506,6 +1542,29 @@ nlu:
     - l5
     - Laboratorio de telecomunicaciones
     - lab 5
+    - Lab de telecomunucaciones
+    - Labpratorio de telecomunicaciones
+    - telecomunicaciones
+    - laboratorio L5
+    - laboratorio telecomunicaciones
+    - l5
+    - Laboratorio telecomunicaciones
+    - lab 5
+    - lab L5
+    - laboratorio L5
+    - laboratorio Telecomunicaciones
+    - lab 5
+    - L5
+    - Laboratorio telecomunicaciones
+    - laboratorio l5
+    - Laboratorio l5
+    - Laboratorio de telecomunicaciones
+    - l5
+    - lab l5
+    - Laboratorio telecomunicaciones 5
+    - Lab5
+    - Laboratorio de telecomunicaciones l5
+    - Lab telecomunicaciones 5
 - synonym: LABORATORIO DE SOFTWARE (L6)
   examples: |
     - lab L6
@@ -1514,6 +1573,38 @@ nlu:
     - Laboratorio de software
     - lab 6
     - l6
+    - laboratorio de software
+    - lab L6
+    - software
+    - laboratorio l6
+    - Laboratorio L6
+    - L6
+    - l6
+    - Laboratorio de software
+    - lab 6
+    - Lab de software
+    - Labpratorio de software
+    - software
+    - laboratorio L6
+    - laboratorio software
+    - l6
+    - Laboratorio software
+    - lab 6
+    - lab L6
+    - laboratorio L6
+    - laboratorio Software
+    - lab 6
+    - L6
+    - Laboratorio software
+    - laboratorio l6
+    - Laboratorio l6
+    - Laboratorio de software
+    - l6
+    - lab l6
+    - Laboratorio software 6
+    - Lab6
+    - Laboratorio de software l6
+    - Lab software 6
 - synonym: OFICINA PSICOLOGA
   examples: |
     - oficina de la psicologa
