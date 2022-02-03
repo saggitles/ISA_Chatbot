@@ -204,11 +204,23 @@ class ActionEntityExtractorLab(Action):
             for x in range(0,len(df.nombre)):
                 if df.nombre[x] == valor:
                     flag = 1
+                    horario = [str(df.lunes[x]), str(df.martes[x]), str(df.miercoles[x]), str(df.jueves[x]), str(df.viernes[x]), str(df.sabado[x]), str(df.domingo[x])]
+                    semana = ['Lunes: ', 'Martes: ', 'Miercoles: ', 'Jueves: ', 'Viernes: ', 'Sabado: ', 'Domingo: ']
+                    horario_final = []
+                    pos = []
+                    for dia in horario:
+                        if dia != '':
+                            posicion = horario.index(dia)
+                            pos.append(semana[posicion])
+                            horario_final.append(dia)
 
-                    print('laboratorio encontrado',str(df.nombre[x]) +' '+ str(df.lunes[x]) +' '+  str(df.martes[x]) +' '+  str(df.miercoles[x]) +' '+  str(df.jueves[x]) +' '+  str(df.viernes[x]) +' '+  str(df.sabado[x]) +' '+  str(df.domingo[x]))
-                    mensaje = 'Laboratorio 🔬: '+str(df.nombre[x]) +'\n Lunes: '+ str(df.lunes[x]) +'\n Martes: '+ str(df.martes[x]) +'\n Miercoles: ' + str(df.miercoles[x]) +'\n Jueves: ' + str(df.jueves[x]) +'\n Viernes: ' + str(df.viernes[x]) +'\n Sabado: '+ str(df.sabado[x]) +'\n Domingo: ' + str(df.domingo[x])
+                    fin1 = []
+                    for i in range(0,len(horario_final)):
+                        fin = pos[i] + horario_final[i]+ '\n'
+                        fin1.append(fin)
+                        mensaje = 'Laboratorio 🔬: '+str(df.nombre[x]) +'\n'+ ''.join(fin1)
 
-
+            
 
             if valor == 'LABORATORIO':
                 flag = 1
