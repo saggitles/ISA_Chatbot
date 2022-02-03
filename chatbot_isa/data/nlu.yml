@@ -580,7 +580,7 @@ nlu:
     - Donde esta la [oficina de psicología](Ubicacion)?
     - Necesito un [salon](Ubicacion)
     - Que [laboratorios](Ubicacion) existe en la universidad?
-    - No encuentro el [laboratorio](codigo_estudiantil)
+    - No encuentro el [laboratorio](Ubicacion)
     - [Salón 11]{"entity": "Ubicacion", "value": "11"}
     - Como llego a la [universidad](Ubicacion)
     - Donde esta el [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
@@ -597,7 +597,7 @@ nlu:
     - [Baños laboratorios](Ubicacion)
     - Donde esta [automatizacion]{"entity": "Ubicacion", "value": "AUTOMATIZACION"}
     - Donde queda el laboratorio de [automatización](Ubicacion)?
-    - Donde esta el [baño de los laboratorios](codigo_estudiantil) del primer piso
+    - Donde esta el [baño de los laboratorios](Ubicacion) del primer piso
     - Donde esta el [baño de los laboratorios](Ubicacion)
     - [Bloque de arquitectura](Ubicacion)
     - Donde esta el [baño](Ubicacion)
@@ -921,6 +921,69 @@ nlu:
     - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
     - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
     - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO GENERAL (L1)"}
+    - Que horarios libres tiene el [laboratorio L1]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Que horarios libres tienen los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horarios [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - [Lab electronica]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Que [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"} hay disponibles
+    - Horarios [lab]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horarios de los [laboratirios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario [l2]{"entity": "Ubicacion", "value": "LABORATORIO INDUSTRIAL (L2)"}
+    - Horario [laboratorio l1]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Horario [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - cuales son los horarios del [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - horarios [laboratorip]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Necesito un [lab]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Que horarios manejan los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Necesito un [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Horario del [lab telecomunicaciones]{"entity": "Ubicacion", "value": "LABORATORIO TELECOMUNICACIONES (L6)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO DE TELECOMUNICACIONES (L5)"}
+    - Que horarios libres tiene el [laboratorio L1]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Que horarios libres tienen los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horarios [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - [Lab electronica]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Que [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"} hay disponibles
+    - Horarios [lab]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horarios de los [laboratirios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario [l2]{"entity": "Ubicacion", "value": "LABORATORIO INDUSTRIAL (L2)"}
+    - Horario [laboratorio l1]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Horario [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - cuales son los horarios del [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - horarios [laboratorip]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Necesito un [lab]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Que horarios manejan los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Necesito un [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Horario del [lab telecomunicaciones]{"entity": "Ubicacion", "value": "LABORATORIO TELECOMUNICACIONES (L6)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO DE SOFTWARE (L6)"}
+    - Que horarios libres tiene el [laboratorio L1]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Que horarios libres tienen los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horarios [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - [Lab electronica]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Que [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"} hay disponibles
+    - Horarios [lab]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horarios de los [laboratirios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario [l2]{"entity": "Ubicacion", "value": "LABORATORIO INDUSTRIAL (L2)"}
+    - Horario [laboratorio l1]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Horario [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - cuales son los horarios del [laboratorio general]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - horarios [laboratorip]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Necesito un [lab]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Que horarios manejan los [laboratorios]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Necesito un [laboratorio]{"entity": "Ubicacion", "value": "LABORATORIO"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Horario del [lab telecomunicaciones]{"entity": "Ubicacion", "value": "LABORATORIO TELECOMUNICACIONES (L6)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
+    - Horario de [l1]{"entity": "Ubicacion", "value": "LABORATORIO ELECTROMEDICINA (L4)"}
 - intent: reglamento_estudiantil
   examples: |
     - reglamento estudiantil
